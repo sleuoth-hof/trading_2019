@@ -27,5 +27,3 @@ samples/sample-*.pdf
 *~
 *.bcf
 *.run.xml
-samples/ACM-Reference-Format.bst
-samples/*.tex
