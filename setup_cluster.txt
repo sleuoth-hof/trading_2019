@@ -1,0 +1,28 @@
+Installation nur auf MASTER:
+
+sudo yum -y install git
+git clone https://github.com/sleuoth/ABDA2019.git
+hdfs dfs -put ./ABDA2019
+
+
+Installation auf allen Knoten:
+
+wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+tar -xzvf ta-lib-0.4.0-src.tar.gz
+cd ta-lib
+./configure --prefix=/usr
+make 
+sudo make install
+sudo yum -y install python3-devel
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py 
+sudo pip install Ta-Lib
+
+
+Programme laufen lassen:
+
+	pyspark --> zum manuellen Test
+
+	spark-submit --deploy-mode cluster  --master yarn  test.py
+
+	yarn logs -applicationId application_xxxxxxx
