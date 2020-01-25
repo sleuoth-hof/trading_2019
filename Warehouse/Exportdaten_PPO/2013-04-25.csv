@@ -1,2 +1,2 @@
-filename	date	open	close	high	low	volume	PPO_RESULT
-btcusd	2013-04-25	141.9	141.9	141.9	141.9	6.51	K1
+filename,date,open,close,high,low,volume,PPO_RESULT
+btcusd,2013-04-25,141.9,141.9,141.9,141.9,6.51,H0

@@ -1,4 +1,6 @@
-filename	date	open	close	high	low	volume	PPO_RESULT
-btcusd	2015-11-25	329.85	329.85	329.85	329.85	0.092962	H0
-ltcbtc	2015-11-25	0.0102	0.010181	0.010201	0.010181	43.4046	H0
-ltcusd	2015-11-25	3.37	3.3760000000000003	3.38	3.347	514.3925233599998	K1
+filename,date,open,close,high,low,volume,PPO_RESULT
+btcusd,2015-11-25,329.85,329.85,329.85,329.85,0.092962,H0
+filename,date,open,close,high,low,volume,PPO_RESULT
+ltcbtc,2015-11-25,0.0102,0.010181,0.010201,0.010181,43.4046,H0
+filename,date,open,close,high,low,volume,PPO_RESULT
+ltcusd,2015-11-25,3.37,3.3760000000000003,3.38,3.347,514.3925233599998,H0
