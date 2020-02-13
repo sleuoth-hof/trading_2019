@@ -1,0 +1,5 @@
+filename,date,open,close,high,low,volume,Signal,intensity
+ctcusd,2013-04-13,91.1,91.1,91.1,91.1,1.0,V,0
+dtcusd,2013-04-13,91.1,91.1,91.1,91.1,1.0,K,0
+btcusd,2013-04-13,91.1,91.1,91.1,91.1,1.0,H,0
+gtcusd,2013-04-13,91.1,91.1,91.1,91.1,1.0,K,3
