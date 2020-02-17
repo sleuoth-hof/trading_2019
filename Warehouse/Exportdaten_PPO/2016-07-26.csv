@@ -1,9 +1,6 @@
 filename,date,open,close,high,low,volume,PPO_RESULT
 btcusd,2016-07-26,648.85,648.47,649.66,648.35,131.13097538999997,H0
-ethbtc,2016-07-26,0.01831,0.018244,0.01831,0.018238,1152.13197464,H0
-filename,date,open,close,high,low,volume,PPO_RESULT
 ethusd,2016-07-26,11.883,11.804,11.883,11.804,35.532414,H0
 ltcbtc,2016-07-26,0.0061077,0.0061077,0.0061077,0.0061077,0.70278735,V2
-filename,date,open,close,high,low,volume,PPO_RESULT
 etcusd,2016-07-26,2.5,2.5,2.5,2.5,0.01,H0
 ltcusd,2016-07-26,3.9706,3.98,3.98,3.9702,3.2903,H0

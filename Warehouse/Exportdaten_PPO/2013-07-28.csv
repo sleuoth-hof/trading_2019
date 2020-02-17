@@ -1,4 +1,4 @@
 filename,date,open,close,high,low,volume,PPO_RESULT
 btcusd,2013-07-28,92.45,92.46,92.46,92.45,2.77346588,H0
-filename,date,open,close,high,low,volume,PPO_RESULT
-ltcusd,2013-07-28,2.86,2.86,2.86,2.86,59.0,V2
+ltcbtc,2013-07-28,0.02958,0.02919,0.02958,0.02919,6.705,V2
+ltcusd,2013-07-28,2.86,2.86,2.86,2.86,59.0,K1
