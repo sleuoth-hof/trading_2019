@@ -36,6 +36,7 @@ cd ~;
 mkdir ABDA2019/testdaten/;
 mv trading_2019/Interpolation/Kollekt ABDA2019/testdaten/cryptominuteresolution;
 hdfs dfs -put ABDA2019 .;
+```
 
 #### All-Nodes:
 ```
