@@ -1,5 +1,7 @@
 \documentclass[sigconf]{acmart}
 
+\bibliographystyle{ACM-Reference-Format}
+
 \setcopyright{acmcopyright}
 \copyrightyear{2020}
 \acmYear{2020}
@@ -12,9 +14,24 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{amssymb}
-\usepackage{listings}
+\usepackage{amsmath}
 
 \geometry{letterpaper} 
+
+\usepackage{listings}
+\lstset{
+  breaklines=true,
+  literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+
+\usepackage{subfiles} % letztes package!
 
 \acmConference[FWPM:Big Data Analysis]{Big Data Analysis}{Wintersemenster, 2019}{Hof}
 \acmBooktitle{FWPM: FWPM:Big Data Analysis, Wintersemenster, 2019, Hof}
@@ -27,7 +44,7 @@
 %% TITLE TODO
 %%
 
-\title{The Name of the Title is Hope}
+\title{ABDA2019}
 
 \author{Tina Amann}
 \email{tina.amann@hof-university.de}
@@ -169,12 +186,19 @@ aufgezeigten Grundprinzipien folgen.
 %% TODO REIHENFOLGE / STRUKTUR NICHT FINAL
 %%
 
+%%
+%% SECTION PPO - Percentage Price Oscillator
+%%
+\subfile{ppo/ppo.tex}
 
 %%
-%% PPO NUR ALS BEISPIEL; NOCH INPROGRESS
+%% LITERATURVERZEICHNIS
 %%
-\section{Percentage Price Oscillator}
-\input{ppo/ppo.tex}
+\bibliography{master-doc}
+
+%%
+%% ABBILDUNGSVERZEICHNIS
+%%
+\listoffigures
 
 \end{document}
-\endinput
