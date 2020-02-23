@@ -1,0 +1,180 @@
+\documentclass[sigconf]{acmart}
+
+\setcopyright{acmcopyright}
+\copyrightyear{2020}
+\acmYear{2020}
+
+%%
+%% PACKAGES HIER
+%%
+
+\usepackage[ngerman]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{listings}
+
+\geometry{letterpaper} 
+
+\acmConference[FWPM:Big Data Analysis]{Big Data Analysis}{Wintersemenster, 2019}{Hof}
+\acmBooktitle{FWPM: FWPM:Big Data Analysis, Wintersemenster, 2019, Hof}
+\acmPrice{}
+\acmISBN{}
+
+\begin{document}
+
+%%
+%% TITLE TODO
+%%
+
+\title{The Name of the Title is Hope}
+
+\author{Tina Amann}
+\email{tina.amann@hof-university.de}
+\affiliation{
+\institution{Hochschule Hof}
+\streetaddress{Alfons-Goppel-Platz 1}
+\city{Hof an der Saale}
+\country{Germany}
+}
+
+\author{Samet Aslan}
+\email{samet.aslan@hof-university.de}
+\affiliation{
+\institution{Hochschule Hof}
+\streetaddress{Alfons-Goppel-Platz 1}
+\city{Hof an der Saale}
+\country{Germany}
+}
+
+\author{Daniel Andre Eckardt}
+\email{daniel.eckardt@hof-university.de}
+\affiliation{
+\institution{Hochschule Hof}
+\streetaddress{Alfons-Goppel-Platz 1}
+\city{Hof an der Saale}
+\country{Germany}
+}
+
+\author{Jan Bernd Gaida}
+\email{jan.gaida@hof-university.de}
+\affiliation{
+\institution{Hochschule Hof}
+\streetaddress{Alfons-Goppel-Platz 1}
+\city{Hof an der Saale}
+\country{Germany}
+}
+
+\author{Patrick David Huget}
+\email{patrick.huget@hof-university.de}
+\affiliation{
+\institution{Hochschule Hof}
+\streetaddress{Alfons-Goppel-Platz 1}
+\city{Hof an der Saale}
+\country{Germany}
+}
+
+\author{Hannes Klaus Müller}
+\email{hannes.mueller@hof-university.de}
+\affiliation{
+\institution{Hochschule Hof}
+\streetaddress{Alfons-Goppel-Platz 1}
+\city{Hof an der Saale}
+\country{Germany}
+}
+
+\author{Alexander Puchta}
+\email{alexander.puchta@hof-university.de}
+\affiliation{
+\institution{Hochschule Hof}
+\streetaddress{Alfons-Goppel-Platz 1}
+\city{Hof an der Saale}
+\country{Germany}
+}
+
+\author{Prof. Dr. Sebastian Leuoth}
+\email{sebastian.leuoth@hof-university.de}
+\affiliation{
+\institution{Hochschule Hof}
+\streetaddress{Alfons-Goppel-Platz 1}
+\city{Hof an der Saale}
+\country{Germany}
+}
+
+%%
+%% ABSTRACT TODO
+%%
+
+\begin{abstract}
+  A clear and well-documented \LaTeX\ document is presented as an
+  article formatted for publication by ACM in a conference proceedings
+  or journal publication. Based on the ``acmart'' document class, this
+  article presents and explains many of the common variations, as well
+  as many of the formatting elements an author may use in the
+  preparation of the documentation of their work.
+\end{abstract}
+
+
+%%
+%% KEYWORDS TODO
+%%
+
+\keywords{datasets, neural networks, gaze detection, text tagging}
+
+\maketitle
+
+
+%%
+%% EINLEITUNG (Hab ich so von https://github.com/sleuoth-hof/trading_2019/blob/master/Abgabe/acmart-master/samples/sample-sigconf.tex hierher kopiert)
+%%
+
+\section{Vorwort}
+Im heutigen hochdigitalisierten Zeitalter gewinnt der richtige Umgang mit Daten gerade auf technologischer Ebene immer mehr an Bedeutung. Nicht nur im Hinblick auf die Einhaltung der entsprechenden Datenschutzrichtlinien, sondern gerade im Bezug auf einen nutzenorientierten, zielgerichteten und zukunftsträchtigen Gebrauch dieser Informationen muss man sich neuen Herausforderungen stellen. Es gilt Konzepte zu entwickeln die möglichst sinnvoll auf den verschiedenen Gebieten der Datenverarbeitung einsetzbar sind. Sie sollten sich den stetig neu ergebende Anforderungen anpassen und umso mehr Faktoren gleichzeitig berücksichtigen können.\newline Ein solches Konzept, welches verschiedene Bereiche des zweckmäßigen Gebrauchs von Daten auf möglichst effiziente Art und Weise vereint, ist das Data Warehouse.\newline Dieses Prinzip bildet ein zentrales Datenbanksystem das zu Analysezwecken verwendet wird. Gerade im betriebswirtschaftlichen Bereich, aber auch in der Forschung wird dieses Modell gezielt eingesetzt, um mittels der richtigen Integration und Analyse von Daten entweder im wissenschaftlichen Kontext zu aussagekräftig interpretierbaren Ergebnissen zu gelangen oder im Zusammenhang der Marktforschung Entscheidungen zu entwickeln.\newline Beim Data Warehouse bildet hierbei eine Art Datenlager. Es bezieht  Date aus einer Reihe von verschiedenen, heterogenen Quellen, sammelt diese und legt sie in verdichteter und aufbereiteter Form des Warehouses, also des Lagers ab.\newline Auf diese Weise kann es die diesem angebundenen Analysesysteme zentral mit dem ermittelten Datenkollektiv versorgen. Diese wiederum werten die Informationen aus. Diese Gesamtheit der Prozesse zur Datenbeschaffung, Verwaltung, Sicherung und Zurverfügungstellen der Daten nennt man dementsprechend Data Warehousing.\newline Dieses beginnt also wiederum mit der Auswahl geeigneter interner oder externer Quellen, die allerdings nicht zum eigentlichen digitalen Lagerhaus gehören. Hierbei muss darauf geachtet werden qualitative Datenbestände ausfindig zu machen, die für das Modell geeignet sind und die allgemein üblichen Grundanforderungen an die Informationen erfüllen. Hierzu gehören unteranderem die Konsistenz, Korrektheit, Vollständigkeit und Zuverlässigkeit der verwendeten Quellen.\newline Im  Architekturschaubild des Data Warehouses folgt die zum eigentlichen Datenbanksystem gehörige Data Staging Area. Diese stellt die zentrale Datenhaltungskomponente des Beschaffungsbereichs dar und dient somit als temprorärer Zwischenspeicher zu Integration, indem sie die Informationen aus den unterschiedlichen Systemen extrahiert, strukturiert, transformiert und ins Warehouse lädt.\newline Zunächst müssen in diesem Zusammenhang  die vorliegenden Daten bereinigt werden, in dem fehlerhafte oder fehlende Werte ausgebessert, Duplikate beseitigt und veraltete Werte geupdatet werden. Hierdurch erfolgt die inhaltliche und  durch entsprechende Schemaintegration die strukturelle Anpassung der Daten, um so die Heterogenität der Quellen zu überwinden.\newline Nachdem die Daten dann bereinigt und in ein einheitliches Format gebracht wurden, können sie in die eigentliche Basisdatenbank geladen werden. Sie bildet die Presentation Are über die auf verschiedenen Ebenen, die sogenannten Data Marts mittels den entsprechenden Access Tools zugegriffen wird, um die beabsichtigten Analysenverfahren durchführen zu können.\newline So wird je nach Themengebiet eine Kennzahl gewonnen auf Basis welcher Entscheidungen oder Schlussfolgerungen getroffen werden können.\newline Um dieses Prinzip des Data Warehousings an einem Beispiel umsetzen zu können, wurde im Rahmen des Wahlfachmoduls „Big Data Analyse“ entschieden ein betriebswirtschaftliches Projekt anhand dieses Konzepts zu 
+\section{Related Work}
+Im Folgenden werden weitere Projekte aufgezeigt, die den Gedanken eines handelsfähigen Bots
+erfolgreich umgesetzt haben. Diese weisen sowohl Gemeinsamkeiten als auch Unterschiede zum hier
+vorgestellten Konzept auf, welche anhand geeigneter Programme vorgestellt werden.\newline Ein solcher
+Trading Bot wird mit der Open Source Lösung „Gekko“ umgesetzt.
+Hierbei handelt es sich um eine kostenlose Open Source Trading Plattform, die mit
+Kryptowährungen, in diesem Fall Bitcoins arbeitet.\newline Im Gegensatz zu der von der Studiengruppe
+angestrebten Lösung wird hier also nur eine Währung realisiert. Außerdem ermöglicht sie es aktuelle,
+aber auch vergangene Kurse genau zu verfolgen den Zwecken entsprechend zu analysieren.\newline Gekko
+erlaubt unteranderem sogar sogenannte „Backtests“. Das sind Strategiesimulationen, die anhand von
+historischen Daten aufzeigen, ob bestimmte Trades in der Vergangenheit profitabel gewesen wären.
+Ebenfalls interessant ist, dass man neben auswählbaren, auch eigene Strategien übergeben kann.\newline
+Aber auch mit Echtzeitdate können Strategien verfolgt und automatisch Trades bei entsprechenden
+Signalen gesetzt setzen. Anders als in diesem Projekt wurde die Lösung in Javascript implementiert
+und läuft auf der Plattform Node.js.
+\newline Ein weiteres Bitcoin-Trading Model stellt der Haasbot dar. Der Bot ist zwar für Bitcoin konzipiert,
+bietet aber dafür hohe sonstige Auswahl- und Einstellungsmöglichkeiten. Dieser Anbieter gibt den
+Nutzern bereits zu Beginn die Möglichkeit zwischen mehreren Basis-Bots wählen und weitere
+hinzuzufügen. Auch eigene Script-Bots können erstellt werden. Analysen, Sicherheiten und
+Absicherungen gehören zu dem Konzept.Haasbot unterstützt zudem eine Vielfalt an
+unterschiedlichen Börsen, darunter auch bereits vorgestellte Projekt Bitfinex.\newline Dieses Modell
+unterscheidet außerdem nicht nur zwischen unterschiedlichen Trading Strategien, sondern auch
+zwischen unterschiedlichen Bot-Typen. Dazu gehören Arbitrage-, Order-, Script und Haasbot Trading
+Bots. Im Gegensatz zu Gecko, sind die für Haasbot notwendigen Lizenzen aber auch recht kostspielig.\newline
+Eine andere Strategie verfolgt der HodlBot. Dieser basiert auf dem Konzept des "passiven
+Investierens".\newline Hierbei wird im Gegensatz zu den meisten andern Bots, nicht auf einzelne Währungen
+gesetzt, sondern bestimmte Marktindizes, die sogenannten „Hodl Indices“. Kunden erstellen hierfür
+zuerst ein persönliches Portfolio. In dieses halten sie fest, welche Währungen sie bevorzugen und
+welches Gewichtungsschema bzw. welche Strategie verfolgt werden soll. Mittels verschiedener APIs
+werden anschließend automatisch Trades abgeschlossen.\newline
+Letztendlich gibt es neben unserer Arbeit also bereits eine Vielzahl an Trading Bots, welche jeweils
+Vorteile und Nachteile aufweisen. An diesen wird sich anhand dieses Projektes orientiert. Die
+Recherche zeigt auch, dass Trading Bots von unterschiedlichsten Herstellen weitestgehend, den hier
+aufgezeigten Grundprinzipien folgen.
+
+%%
+%% TODO REIHENFOLGE / STRUKTUR NICHT FINAL
+%%
+
+
+%%
+%% PPO NUR ALS BEISPIEL; NOCH INPROGRESS
+%%
+\section{Percentage Price Oscillator}
+\input{ppo/ppo.tex}
+
+\end{document}
+\endinput
