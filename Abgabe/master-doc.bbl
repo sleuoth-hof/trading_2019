@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{8}
+\begin{thebibliography}{18}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -37,6 +37,38 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[\protect\citeauthoryear{??}{mrj}{[n.d.]}]%
+        {mrj20}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock
+  \bibinfo{howpublished}{\url{http://mrjbq7.github.io/ta-lib/func_groups/momentum_indicators.html}}.
+\newblock
+\newblock
+\shownote{Accessed: 10.02.2020.}
+
+
+\bibitem[\protect\citeauthoryear{??}{aro}{[n.d.]}]%
+        {aro20}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Aroon(ARO)}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.tradesignalonline.com/lexicon/view.aspx?id=Aroon+(ARO)}}.
+\newblock
+\newblock
+\shownote{Accessed: 10.02.2020.}
+
+
+\bibitem[\protect\citeauthoryear{??}{tra}{[n.d.]}]%
+        {tra20}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Rate of Change}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.tradesignalonline.com/lexicon/view.aspx?id=Rate+of+Change+(ROC)}}.
+\newblock
+\newblock
+\shownote{Accessed: 10.02.2020.}
+
+
 \bibitem[\protect\citeauthoryear{{Adam Hayes}}{{Adam Hayes}}{2019}]%
         {inoPedEma}
 \bibfield{author}{\bibinfo{person}{{Adam Hayes}}.}
@@ -49,7 +81,31 @@
 \showURL{%
 \tempurl}
 \newblock
-\shownote{[Online; accessed 23.02.2020].}
+\shownote{[Online; abgerufen am 22.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{Berteit}{Berteit}{[n.d.]a}]%
+        {ber201}
+\bibfield{author}{\bibinfo{person}{Rene Berteit}.}
+  \bibinfo{year}{[n.d.]}\natexlab{a}.
+\newblock \bibinfo{title}{Indikatoren-Knowhow: Aroon Up/Down}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.godmode-trader.de/know-how/indikatoren-knowhow-aroon-updown,3635454}}.
+\newblock
+\newblock
+\shownote{Accessed: 10.02.2020.}
+
+
+\bibitem[\protect\citeauthoryear{Berteit}{Berteit}{[n.d.]b}]%
+        {ber20}
+\bibfield{author}{\bibinfo{person}{Rene Berteit}.}
+  \bibinfo{year}{[n.d.]}\natexlab{b}.
+\newblock \bibinfo{title}{Relative Stärke Index RSI}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.godmode-trader.de/know-how/relative-staerke-index-rsi-was-steckt-hinter-diesem-indikator,3735120}}.
+\newblock
+\newblock
+\shownote{Accessed: 10.02.2020.}
 
 
 \bibitem[\protect\citeauthoryear{{Cory Mitchell}}{{Cory Mitchell}}{2019}]%
@@ -64,7 +120,74 @@
 \showURL{%
 \tempurl}
 \newblock
-\shownote{[Online; accessed 23.02.2020].}
+\shownote{[Online; abgerufen am 22.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{{Deep Crypto Trading Projektgruppe}}{{Deep
+  Crypto Trading Projektgruppe}}{2019}]%
+        {deepCrypto}
+\bibfield{author}{\bibinfo{person}{{Deep Crypto Trading Projektgruppe}}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Deep Reinforcement Learning für algorithmischen
+  Handel an Kryptowährungsbörsen}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://uol.de/fileadmin/user_upload/informatik/download/lehre/PGs/PG_DeepCryptoTrading_neu.pdf}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; accessed 24.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{der Universität~Oldenburg}{der
+  Universität~Oldenburg}{2019}]%
+        {pro19}
+\bibfield{author}{\bibinfo{person}{Projektgruppe~DeepCryptoTrading der
+  Universität~Oldenburg}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Deep Reinforcement Learning für algorithmischen
+  Handel an Kryptowährungsbörsen}.
+\newblock
+  \bibinfo{howpublished}{\url{https://uol.de/fileadmin/user_upload/informatik/download/lehre/PGs/PG_DeepCryptoTrading_neu}}.
+  , \bibinfo{numpages}{163--169}~pages.
+\newblock
+\newblock
+\shownote{Accessed: 10.02.2020.}
+
+
+\bibitem[\protect\citeauthoryear{Fortier}{Fortier}{[n.d.]}]%
+        {taLib}
+\bibfield{author}{\bibinfo{person}{Mario Fortier}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{taLib}.
+\newblock \bibinfo{howpublished}{\url{http://ta-lib.org}}.
+\newblock
+\newblock
+\shownote{Accessed: 10.02.2020.}
+
+
+\bibitem[\protect\citeauthoryear{Hadoop}{Hadoop}{2017}]%
+        {beg17}
+\bibfield{author}{\bibinfo{person}{Beginner's Hadoop}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{User defined functions(udf) in spark}.
+\newblock
+  \bibinfo{howpublished}{\url{http://beginnershadoop.com/2017/11/26/user-defined-functionsudf-in-spark/}}.
+\newblock
+\newblock
+\shownote{Accessed: 10.02.2020.}
+
+
+\bibitem[\protect\citeauthoryear{la~Gre}{la~Gre}{[n.d.]}]%
+        {gekko}
+\bibfield{author}{\bibinfo{person}{Filip la Gre}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Gekko-Stratgies}.
+\newblock
+  \bibinfo{howpublished}{\url{https://github.com/xFFFFF/Gekko-Strategies}}.
+\newblock
+\newblock
+\shownote{Accessed: 10.02.2020.}
 
 
 \bibitem[\protect\citeauthoryear{{Mikhail Levkovsky}}{{Mikhail
@@ -81,7 +204,7 @@
 \showURL{%
 \tempurl}
 \newblock
-\shownote{[Online; accessed 23.02.2020].}
+\shownote{[Online; abgerufen am 22.02.2020].}
 
 
 \bibitem[\protect\citeauthoryear{{Thomas Spicer}}{{Thomas Spicer}}{2019}]%
@@ -96,7 +219,7 @@
 \showURL{%
 \tempurl}
 \newblock
-\shownote{[Online; accessed 23.02.2020].}
+\shownote{[Online; abgerufen am 22.02.2020].}
 
 
 \bibitem[\protect\citeauthoryear{{TradingView contributors}}{{TradingView
@@ -112,7 +235,7 @@
 \showURL{%
 \tempurl}
 \newblock
-\shownote{[Online; accessed 23.02.2020].}
+\shownote{[Online; abgerufen am 22.02.2020].}
 
 
 \bibitem[\protect\citeauthoryear{{TradingView contributors}}{{TradingView
@@ -128,7 +251,7 @@
 \showURL{%
 \tempurl}
 \newblock
-\shownote{[Online; accessed 23.02.2020].}
+\shownote{[Online; abgerufen am 22.02.2020].}
 
 
 \bibitem[\protect\citeauthoryear{{Wikipedia contributors}}{{Wikipedia
@@ -144,7 +267,7 @@
 \showURL{%
 \tempurl}
 \newblock
-\shownote{[Online; accessed 24-February-2020].}
+\shownote{[Online; abgerufen am 22.02.2020].}
 
 
 \bibitem[\protect\citeauthoryear{{Wikipedia contributors}}{{Wikipedia
@@ -160,7 +283,7 @@
 \showURL{%
 \tempurl}
 \newblock
-\shownote{[Online; accessed 24-February-2020].}
+\shownote{[Online; abgerufen am 22.02.2020].}
 
 
 \end{thebibliography}
