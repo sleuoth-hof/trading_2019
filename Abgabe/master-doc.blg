@@ -10,46 +10,44 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty year in taLib
-You've used 1 entry,
+You've used 8 entries,
             5764 wiz_defined-function locations,
-            1302 strings with 14547 characters,
-and the built_in function-call counts, 797 in all, are:
-= -- 71
-> -- 20
+            1349 strings with 15587 characters,
+and the built_in function-call counts, 6071 in all, are:
+= -- 660
+> -- 156
 < -- 0
-+ -- 5
-- -- 8
-* -- 43
-:= -- 101
-add.period$ -- 6
-call.type$ -- 1
-change.case$ -- 5
-chr.to.int$ -- 1
-cite$ -- 2
-duplicate$ -- 62
-empty$ -- 47
-format.name$ -- 8
-if$ -- 154
-int.to.chr$ -- 2
++ -- 42
+- -- 62
+* -- 334
+:= -- 692
+add.period$ -- 48
+call.type$ -- 8
+change.case$ -- 40
+chr.to.int$ -- 6
+cite$ -- 8
+duplicate$ -- 563
+empty$ -- 409
+format.name$ -- 62
+if$ -- 1276
+int.to.chr$ -- 4
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 50
-num.names$ -- 8
-pop$ -- 35
+newline$ -- 152
+num.names$ -- 62
+pop$ -- 169
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 108
 quote$ -- 0
-skip$ -- 20
+skip$ -- 221
 stack$ -- 0
-substring$ -- 36
-swap$ -- 5
+substring$ -- 442
+swap$ -- 40
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 30
-warning$ -- 1
-while$ -- 8
+type$ -- 228
+warning$ -- 0
+while$ -- 62
 width$ -- 0
-write$ -- 58
-(There was 1 warning)
+write$ -- 215

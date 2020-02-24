@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{1}
+\begin{thebibliography}{8}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -37,15 +37,130 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
-\bibitem[\protect\citeauthoryear{Fortier}{Fortier}{[n.d.]}]%
-        {taLib}
-\bibfield{author}{\bibinfo{person}{Mario Fortier}.}
-  \bibinfo{year}{[n.d.]}\natexlab{}.
-\newblock \bibinfo{title}{taLib}.
-\newblock \bibinfo{howpublished}{\url{http://ta-lib.org}}.
+\bibitem[\protect\citeauthoryear{{Adam Hayes}}{{Adam Hayes}}{2019}]%
+        {inoPedEma}
+\bibfield{author}{\bibinfo{person}{{Adam Hayes}}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Exponential Moving Average - EMA Definition}.
 \newblock
 \newblock
-\shownote{Accessed: 10.02.2020.}
+\urldef\tempurl%
+\url{https://www.investopedia.com/terms/e/ema.asp}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; accessed 23.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{{Cory Mitchell}}{{Cory Mitchell}}{2019}]%
+        {inoPedPpo}
+\bibfield{author}{\bibinfo{person}{{Cory Mitchell}}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Percentage Price Oscillator – PPO}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.investopedia.com/terms/p/ppo.asp}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; accessed 23.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{{Mikhail Levkovsky}}{{Mikhail
+  Levkovsky}}{2019}]%
+        {medCsvParq}
+\bibfield{author}{\bibinfo{person}{{Mikhail Levkovsky}}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{CSV vs Parquet vs Avro: Choosing the Right Tool for
+  the Right Job}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://medium.com/ssense-tech/csv-vs-parquet-vs-avro-choosing-the-right-tool-for-the-right-job-79c9f56914a8}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; accessed 23.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{{Thomas Spicer}}{{Thomas Spicer}}{2019}]%
+        {dzCsvParq}
+\bibfield{author}{\bibinfo{person}{{Thomas Spicer}}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Apache Parquet vs. CSV Files}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://dzone.com/articles/how-to-be-a-hero-with-powerful-parquet-google-and}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; accessed 23.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{{TradingView contributors}}{{TradingView
+  contributors}}{2019a}]%
+        {tvWikiMacd}
+\bibfield{author}{\bibinfo{person}{{TradingView contributors}}.}
+  \bibinfo{year}{2019}\natexlab{a}.
+\newblock \bibinfo{title}{MACD (Moving Average Convergence/Divergence)}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.tradingview.com/wiki/MACD_(Moving_Average_Convergence/Divergence)}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; accessed 23.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{{TradingView contributors}}{{TradingView
+  contributors}}{2019b}]%
+        {tvWikiPpo}
+\bibfield{author}{\bibinfo{person}{{TradingView contributors}}.}
+  \bibinfo{year}{2019}\natexlab{b}.
+\newblock \bibinfo{title}{Price Oscillator (PPO)}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.tradingview.com/wiki/Price_Oscillator_(PPO)}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; accessed 23.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{{Wikipedia contributors}}{{Wikipedia
+  contributors}}{2019a}]%
+        {wikiParq}
+\bibfield{author}{\bibinfo{person}{{Wikipedia contributors}}.}
+  \bibinfo{year}{2019}\natexlab{a}.
+\newblock \bibinfo{title}{Apache Parquet}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://en.wikipedia.org/wiki/Apache_Parquet}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; accessed 24-February-2020].}
+
+
+\bibitem[\protect\citeauthoryear{{Wikipedia contributors}}{{Wikipedia
+  contributors}}{2019b}]%
+        {wikiCsv}
+\bibfield{author}{\bibinfo{person}{{Wikipedia contributors}}.}
+  \bibinfo{year}{2019}\natexlab{b}.
+\newblock \bibinfo{title}{CSV (Dateiformat)}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://de.wikipedia.org/wiki/CSV_(Dateiformat)}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; accessed 24-February-2020].}
 
 
 \end{thebibliography}

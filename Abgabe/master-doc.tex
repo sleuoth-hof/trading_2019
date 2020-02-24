@@ -11,11 +11,13 @@
 %%
 
 \usepackage[ngerman]{babel}
-\usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsmath}
 
+\usepackage{url}
+
+\usepackage{geometry}
 \geometry{letterpaper} 
 
 \usepackage{listings}
@@ -31,6 +33,7 @@
   {ö}{{\"o}}1
 }
 
+
 \usepackage{subfiles} % letztes package!
 
 \acmConference[FWPM:Big Data Analysis]{Big Data Analysis}{Wintersemenster, 2019}{Hof}
@@ -38,13 +41,14 @@
 \acmPrice{}
 \acmISBN{}
 
+
 \begin{document}
 
 %%
 %% TITLE TODO
 %%
 
-\title{ABDA2019}
+\title{Crypto Trading Recommender mittels Spark}
 
 \author{Tina Amann}
 \email{tina.amann@hof-university.de}
@@ -189,7 +193,7 @@ aufgezeigten Grundprinzipien folgen.
 %%
 %% SECTION PPO - Percentage Price Oscillator
 %%
-%%\subfile{ppo/ppo.tex}
+\subfile{ppo/ppo.tex}
 
 %%
 %% SECTION BOT - Trading Bot
