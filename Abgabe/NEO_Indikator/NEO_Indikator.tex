@@ -1,0 +1,95 @@
+\begin{document}		
+
+\section{Das NEO-Indikatorsystem}
+%\label{sec:neo_indikatorsystem}
+
+\subsection{Hinführung}
+%\label{sec:hinführung}
+
+In diesem Abschnitt soll beschrieben werden, wie Chartverläufe von Kryptowährungen analysiert werden können, um mit Hilfe von bestimmten technischen Indikatoren zur Trading"=Entscheidungsfindung beizutragen. Die Indikatoren werden hierbei nicht selbst implementiert, sondern unter zur Hilfenahme der Open-Source Library TA-Lib, vgl. \cite{taLib} berechnet und anschließend von einer Bewertungsstrategie genauer im Hinblick auf mögliche Trendwechsel betrachtet. Die Bewertungsstrategie, genannt NEO-Strategie, baut bzw. modifiziert hierbei eine bereits vorhandene Strategie. Diese Strategie  wird im GitHub-Repository Gekko-Strategies, vgl. \cite{gekko}, welches eine Vielzahl von Strategien für die Trading-Plattform Gekko bereithält und zudem in einem Projekt der Universität Oldenburg \cite{pro19} verwendet. Zuletzt sollen die Daten in einer standardisierten Form an die nachgelagerte Entscheidungsfindung weitergegeben werden.
+
+\subsection{TA-Lib}
+%\label{sec:ta-lib}
+
+Die TA-Lib ist eine weit verbreitete, in C geschriebene, Open-Source Library für Softwareentwickler, welche zur technischen Analyse von Finanzmärkten herangezogen wird. Die TA-Lib beinhaltet über 200 Indikatoren wie z.B. MACD,  RSI, Bollinger Bänder usw. und besitzt Open-Source API’s für C/C++, Java, Perl, .NET, und Python, vgl. \cite{taLib}. Sie existiert seit dem Alpha Release im September 2001 (V0.0.1) und erhielt bis zum aktuellsten Release (V0.4) im September 2007 jährlich neue Patches. Die TA-Lib ermöglicht eine Integration von technischen Indikatoren ohne die Berechnungen dafür, selbst implementieren zu müssen und eignet sich durch die Python-API somit sehr gut für unsere Bewertungsstrategie. Ebenfalls vereinfacht sie die Handhabung mit den Indikatoren enorm, da so bei Bedarf die verwendeten Indikatoren einfach ausgetauscht werden können. Ein zusätzlicher Vorteil ist, dass die Indikatoren jeweils ähnliche Parameter aufweisen, welche meistens wie folgt lauten:\\
+
+\begin{itemize}
+	\item Timeperiod, eine gewählte Zeitperiode für den Chart
+	\item Close, der Schlusskurs des jeweiligen Tages
+	\item Open, der Eröffnungskurs des jeweiligen Tages
+	\item High, der Höchstkurs des jeweiligen Zeitraums
+	\item Low, der niedrigste Kurs des jeweiligen Zeitraums
+\end{itemize}
+
+Eine ausführliche Dokumentation der Indikatorenparameter und der Funktionen findet sich auf der Website bzw. dem zugehörigen GitHub-Repository \cite{mrj20} für einen Python-Wrapper, welcher zur Effizienzsteigerung und besserem Benutzerhandling für die Python Version der TaLib entwickelt wurde.
+
+\subsection{NEO-Strategie}
+\label{sec:neo-strategie}
+
+Die eigentliche NEO-Strategie baut auf einer RSI Bull/Bear-Strategie auf, welche Märkte anhand ihrer Trends analysieren soll, vgl. \cite{pro19} . Um Nachzuvollziehen können wie der hier verwendete Relativ Strength Index (RSI) funktioniert, soll kurz auf dessen Berechnung eingegangen werden. Der RSI setzt im Grunde die Stärke von Kursverlusten mit der Stärke von Kursgewinnen in einem gewünschten Zeitraum zueinander ins Verhältnis. Die Formel hierfür lautet: \\ 
+
+\begin{equation}
+\text{RSI}=100\cdot\frac{\text{\o\ Summe Gewinn positiver Tage}}{\text{\o\ Summe Gewinn positiver Tage}+\text{\o\ Summe Verlust negativer Tage}}
+\end{equation} \\
+
+Durch die Multiplikation oszilliert der Indikator zwischen 0 und 100, wodurch er sich sehr gut in Verbindung mit Parametern verwenden lässt. Das Überschreiten eines oberen Grenzwertes bedeutet einen überkauften Markt und ein Unterschreiten des unteren Grenzwertes einen überverkauften Markt. Bei Wiedereintritt in die "'Neutrale-Zone"', also zwischen den Extremwertbereichen, werden so die Kauf- bzw. Verkaufssignale abgegeben, vgl. \cite{ber20}. In der Projektarbeit der Projektgruppe"=DeepCryptoTrading wird bereits eine Analyse der ursprünglichen Gekko-Strategie vorgenommen: "`Zwei unterschiedlich schnelle Moving Averages erkennen, ob es sich um einen Bull oder einen Bear-Market handelt. Anhand dessen wird entweder ein RSI verwendet, der für einen Bull-Market parametrisiert wurde oder einer, der für einen Bear-Market parametrisiert wurde. Dieser RSI wird dann auf zwei Thresholds geprüft, ob Short oder Long als Advice gegeben werden soll. Diese Thresholds sind dabei auch abhängig davon, ob es sich um einen Bull- oder einen Bear-Market handelt."' \cite{pro19}. Die Erweiterung der NEO-Strategie besteht bei der Projektgruppe nun darin, dass der Rate of Change-Indikator (ROC) zur Unterteilung des Bull-Market in einen Idle-Bull-Market und einen Real-Bull-Market hinzugezogen wird. Der ROC berechnet sich wie folgt: \\ 
+
+\begin{equation}
+\text{ROC}=100\cdot\frac{\text{Schlusskurs aktuell}- \text{Schlusskurs alt}}{\text{Schlusskurs alt}}
+\end{equation} \\
+
+Der ROC fächert den Bull-Market somit nochmals auf, um aufgrund der Veränderungen unterscheiden zu können, ob der Bulll-Market von Dauer ist. Somit kann die Entscheidung des Kaufs oder Verkaufs präziser getroffen werden bzw. die Intaktheit des Marktes bestimmt werden. Der Nachteil des ROC ist, dass er keinerlei Glättungsfaktoren beinhaltet und somit bei unruhigen Kursen eine sehr sprunghafte Änderung erfolgen kann, vgl. \cite{tra20}.\\
+
+Aufgrund dieses Nachteils setzt die in der Studienarbeit angepasste NEO-Strategie, auf den Aroon-Indikator als Filter, anstatt auf den ROC und den SMA. Der Aroon-Indikator besteht aus den zwei Linien Aroon Up und Aroon Down, welche das Ziel verfolgen die aktuelle Marktphase im Hinblick auf Aufwärtstrend, Abwärtstrend und Seitwärtstrend zu ermitteln, vgl. \cite{ber201}. Die Berechnung der zwei Indikatoren-Linien setzt sich wie folgt zusammen: \\
+
+\begin{equation}
+\text{Aroon Up}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodenhoch}}{\text{Periodenlänge}}
+\end{equation} \\
+
+\begin{equation}
+\text{Aroon Down}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodentief}}{\text{Periodenlänge}}
+\end{equation} \\
+
+Der Indikator, welcher sich ebenfalls in Wertebereichen zwischen 100 und 0 bewegt, zeigt somit in den oberen bzw. unteren Extremwertbereichen einen Aufwärtstrend bzw. Abwärtstrend an und bei Überschneidungen der beiden Indikatorlinien einen Trendwechsel. Er berücksichtigt keine preislichen Aspekte, sondern lediglich zeitliche, was dazu führt das kleinere Schwankungen ihn durchaus aus der Bahn werfen können, er jedoch bei längeren Trends, diese zuverlässig anzeigt, vgl. \cite{aro20}. Dadurch wird das Risiko bewusst in Kauf genommen kleinere Trades zu verpassen, dafür größere Trades hingegen präziser zu erkennen. Die Abwandlung der NEO-Strategie soll also den Aroon als Filter einsetzen, um mögliche Trends zu identifizieren und in Kombination mit dem RSI auch die Stärke jener zu evaluieren bzw. korrekt zu deuten. Mit den Parameterwerten für die Extremwerte von RSI und dem Aroon-Paar muss experimentiert werden, wobei in den meisten Quellen die Werte wie folgt gesetzt werden: \\
+
+\begin{itemize}
+	\item Aroon Up/Down: High=70, Low=30
+	\item RSI: High=70, Low=30
+\end{itemize}
+
+\subsection{Anwendung der Strategie}
+
+Der Import der Basis-Daten aus einem GitHub-Repository sowie der Export an die nachfolgende Auswertung der Empfehlungen erfolgt in Form von CSV-Dateien. Beim Import müssen die vorhandenen Daten mit Hilfe von PySpark soweit aufbereitet werden, dass sie für die weitere Auswertung nutzbar sind. Das heißt, dass beispielsweise ein Filename für jede Zeile der Daten hinzugefügt wird um diesen später als Referenz für Aggregatsfunktionen nutzen zu können. Konkret wird also nach den oben beschriebenen Schnittpunkten und Extremwertbereichen gesucht und anhand dieser Punkte für den jeweiligen Indikator eine Empfehlung getroffen. Die Ausarbeitung im Quellcode für die Indikatoren sieht, beispielsweise für den RSI, wie folgt aus: \\
+
+\lstinputlisting[language=Python,caption=Sourcode RSI Example]{codelisting-rsi.py}
+%\newpage
+
+Um nun einen Konsens aus den beiden Indikatoren-Empfehlungen zu erlangen, werden diese anhand einer Empfehlungsmatrix zu einer gemeinsamen Empfehlung zusammengelegt. Der Aufbau der Matrix ist mit den anderen Indikatoren abgestimmt, sodass nachgelagert mehrere Indikatorensysteme verglichen werden können. Die Matrix hat folgende Form: \\
+
+%MATRIX:
+
+\begin{table}[h] 
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{|l|l|l|l|l|l|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{NEO}} & Bullenmarkt ($+$) & bull. Trendw. ($++$) & Bärenmarkt ($-$) & bär. Trendw. ($--$) & Neutraler Markt \\ \hline
+			Aufwärtstrend ($+$)   & $++$ = K1  & $+++$ = K2  & $+-$ = H1  & $+--$ = V0  & $+$ = K0  \\ \hline
+			Kauf-Signal ($++$)    & $+++$ = K2 & $++++$ = K3 & $++-$ = K0 & $++--$ = H2 & $++$ = K1 \\ \hline
+			Abwärtstrend ($-$)    & $-+$ = H1  & $-++$ = K0  & $--$ = V1  & $---$ = V2  & $-$ = V0  \\ \hline
+			Verkauf-Signal ($--$) & $--+$ = V0 & $--++$ = H2 & $---$ = V2 & $----$ = V3 & $--$ = V1 \\ \hline
+			Neutraler Markt     & $+$ = K0   & $++$ = K1   & $-$ = V0   & $--$ = V1   & = H3    \\ \hline
+		\end{tabular}
+	}
+	\caption{Empfehlungs-Matrix}
+	\label{Empfehlungs-Matrix}
+\end{table}
+
+
+Um die Berechnung der Indikatoren über die TA-Lib zu ermöglichen, ohne die Funktionalität von Spark verlassen zu müssen, werden mehrere User Defined Functions angelegt. User Defined Functions dienen dazu nicht vorhandene Funktionen in Spark SQL, beispielsweise mittels PySpark, nachzubilden, um wie in unserem Szenario, dass tatsächliche Arbeiten an den Daten mit nicht-performanten Strukturen wie Numpy-Arrays größtenteils umgehen zu können, vgl. \cite{beg17}. Die UDF’s werden durch die Übergabe von Arrays mit den Kursdaten versorgt und können nun den jeweils letzten Wert des übergebenen Arrays als errechneten Indikatorwert zurückgeben, sodass eine Parallelisierung gewährleistet werden kann. Die Arrays werden durch PySpark-Window-Funktionen auf 14 Tage begrenzt, sodass die UDF bzw. die Numpy-Arrays nur mit diesen Zeitbereichen interagieren müssen. Die Aufschlüsselung der Matrix erfolgt mittels einer SQL-Funktion, welche die einzelnen Indikatorenergebnisse miteinander verbindet.\\
+
+\subsection{Bewertung der NEO-Strategie}
+Die Bewertung der abgewandelten NEO-Strategie ist zum aktuellen Stand des Projektes noch schwierig einzuordnen, da Ergebnisse nur bedingt vorliegen. Es lässt sich aber erahnen, dass die beiden Indikatoren nicht so gut harmonieren wie ursprünglich gedacht, da die Anzeige des Trends etwas zeitversetzt verläuft. Durch diese zeitliche Diskrepanz kann es dazu kommen, dass der RSI den Trend schon wieder als beendet wertet und der Aroon erst hier einen Trendwechsel vermeldet. Das bereits oben genannte Feintuning der Parameter ist also noch durchzuführen, um zuverlässige Trendanzeigen zu erzielen.
+
+%\bibliography{NEO_Indikator}
+
+\end{document}
