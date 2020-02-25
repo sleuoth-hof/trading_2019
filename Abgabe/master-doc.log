@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.25)  25 FEB 2020 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.25)  25 FEB 2020 22:37
 entering extended mode
 **./master-doc.tex
 (master-doc.tex
@@ -1321,7 +1321,7 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 173.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 173.
- (Einleitung/einleitung.tex)
+ (Einleitung/abstract.tex) (Einleitung/einleitung.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1.1{C:/Users/leona/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
@@ -1352,7 +1352,10 @@ Class acmart Warning: A possible image without description on input line 34.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 40.
-[3.3]
+
+Underfull \vbox (badness 2073) has occurred while \output is active []
+
+ [3.3]
 ("C:\Users\leona\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
 sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
@@ -1384,7 +1387,7 @@ Class acmart Warning: A possible image without description on input line 74.
 
 Class acmart Warning: A possible image without description on input line 88.
 
-<ppo/graph_btcusd_ppo_2.png, id=204, 1408.26125pt x 378.41376pt>
+<ppo/graph_btcusd_ppo_2.png, id=200, 1408.26125pt x 378.41376pt>
 File: ppo/graph_btcusd_ppo_2.png Graphic file (type png)
 <use ppo/graph_btcusd_ppo_2.png>
 Package pdftex.def Info: ppo/graph_btcusd_ppo_2.png  used on input line 96.
@@ -1397,7 +1400,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 96--97
 
 Class acmart Warning: A possible image without description on input line 99.
 
-<ppo/graph_btcusd_ppo_1.png, id=206, 1321.93875pt x 379.4175pt>
+<ppo/graph_btcusd_ppo_1.png, id=202, 1321.93875pt x 379.4175pt>
 File: ppo/graph_btcusd_ppo_1.png Graphic file (type png)
 <use ppo/graph_btcusd_ppo_1.png>
 Package pdftex.def Info: ppo/graph_btcusd_ppo_1.png  used on input line 102.
@@ -1412,7 +1415,7 @@ Class acmart Warning: A possible image without description on input line 105.
 
 [4.4 <./ppo/graph_btcusd_ppo_2.png> <./ppo/graph_btcusd_ppo_1.png>])
 (NEO_Indikator/NEO_Indikator.tex
-Underfull \vbox (badness 3623) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
@@ -1518,7 +1521,7 @@ surrounding objects on input line 85.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 85.
-(NEO_Indikator/codelisting-rsi.py)
+(NEO_Indikator/codelisting-rsi.py [6.6])
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
 surrounding objects on input line 85.
@@ -1535,15 +1538,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-[6.6]) (wahlverfahren/Doku.tex
-<wahlverfahren/wahlverfahren.png, id=316, 362.10281pt x 567.62062pt>
+) (wahlverfahren/Doku.tex
+<wahlverfahren/wahlverfahren.png, id=314, 362.10281pt x 567.62062pt>
 File: wahlverfahren/wahlverfahren.png Graphic file (type png)
 <use wahlverfahren/wahlverfahren.png>
 Package pdftex.def Info: wahlverfahren/wahlverfahren.png  used on input line 16
@@ -1553,8 +1553,11 @@ Package pdftex.def Info: wahlverfahren/wahlverfahren.png  used on input line 16
 
 Class acmart Warning: A possible image without description on input line 19.
 
-[7.7 <./wahlverfahren/wahlverfahren.png>]
-<wahlverfahren/diagrammVerkauf.png, id=333, 377.91188pt x 594.72188pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7.7]
+<wahlverfahren/diagrammVerkauf.png, id=341, 377.91188pt x 594.72188pt>
 File: wahlverfahren/diagrammVerkauf.png Graphic file (type png)
 <use wahlverfahren/diagrammVerkauf.png>
 Package pdftex.def Info: wahlverfahren/diagrammVerkauf.png  used on input line 
@@ -1564,10 +1567,7 @@ Package pdftex.def Info: wahlverfahren/diagrammVerkauf.png  used on input line
 
 Class acmart Warning: A possible image without description on input line 40.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<wahlverfahren/tabelleVerkauf.png, id=334, 299.61937pt x 117.43875pt>
+<wahlverfahren/tabelleVerkauf.png, id=342, 299.61937pt x 117.43875pt>
 File: wahlverfahren/tabelleVerkauf.png Graphic file (type png)
 <use wahlverfahren/tabelleVerkauf.png>
 Package pdftex.def Info: wahlverfahren/tabelleVerkauf.png  used on input line 4
@@ -1576,24 +1576,20 @@ Package pdftex.def Info: wahlverfahren/tabelleVerkauf.png  used on input line 4
 
 Class acmart Warning: A possible image without description on input line 47.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<wahlverfahren/diagrammKauf.png, id=336, 487.06969pt x 601.4972pt>
+[8.8 <./wahlverfahren/wahlverfahren.png> <./wahlverfahren/diagrammVerkauf.png> 
+<./wahlverfahren/tabelleVerkauf.png>]
+<wahlverfahren/diagrammKauf.png, id=356, 487.06969pt x 601.4972pt>
 File: wahlverfahren/diagrammKauf.png Graphic file (type png)
 <use wahlverfahren/diagrammKauf.png>
 Package pdftex.def Info: wahlverfahren/diagrammKauf.png  used on input line 56.
 
 (pdftex.def)             Requested size: 241.14749pt x 297.80168pt.
 
+
 Class acmart Warning: A possible image without description on input line 59.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (bot/bot.tex [8.8 <./wahlverfahren/diagrammVerkauf.png> <./wahlverfahren/tabe
-lleVerkauf.png>]
-<bot/trading_diagramm.png, id=351, 596.2275pt x 289.08pt>
+) (bot/bot.tex
+<bot/trading_diagramm.png, id=358, 596.2275pt x 289.08pt>
 File: bot/trading_diagramm.png Graphic file (type png)
 <use bot/trading_diagramm.png>
 Package pdftex.def Info: bot/trading_diagramm.png  used on input line 16.
@@ -1602,7 +1598,7 @@ Package pdftex.def Info: bot/trading_diagramm.png  used on input line 16.
 
 Class acmart Warning: A possible image without description on input line 19.
 
-<bot/wireframe_bot.png, id=352, 684.30656pt x 495.95288pt>
+<bot/wireframe_bot.png, id=359, 684.30656pt x 495.95288pt>
 File: bot/wireframe_bot.png Graphic file (type png)
 <use bot/wireframe_bot.png>
 Package pdftex.def Info: bot/wireframe_bot.png  used on input line 26.
@@ -1610,7 +1606,7 @@ Package pdftex.def Info: bot/wireframe_bot.png  used on input line 26.
 
 Class acmart Warning: A possible image without description on input line 29.
 
-<bot/funktionen_diagramm.png, id=353, 835.2003pt x 569.2467pt>
+<bot/funktionen_diagramm.png, id=360, 835.2003pt x 569.2467pt>
 File: bot/funktionen_diagramm.png Graphic file (type png)
 <use bot/funktionen_diagramm.png>
 Package pdftex.def Info: bot/funktionen_diagramm.png  used on input line 38.
@@ -1624,7 +1620,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--43
  []
 
 [9.9 <./wahlverfahren/diagrammKauf.png> <./bot/trading_diagramm.png> <./bot/wir
-eframe_bot.png> <./bot/funktionen_diagramm.png>]
+eframe_bot.png>]
 LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 5
 5.
 
@@ -1682,14 +1678,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--249
 [] enterprise -[] architect / zustandsdiagramm -[]
  []
 
+[10.10 <./bot/funktionen_diagramm.png>]
 LaTeX Info: Redefining \tempurl on input line 283.
 LaTeX Info: Redefining \tempurl on input line 299.
 LaTeX Info: Redefining \tempurl on input line 315.
 LaTeX Info: Redefining \tempurl on input line 367.
 LaTeX Info: Redefining \tempurl on input line 383.
-[10.10])
+)
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 215.
+(Font)              scaled to size 9.0pt on input line 216.
  (master-doc.lof)
 \tf@lof=\write5
 \openout5 = `master-doc.lof'.
@@ -1705,54 +1702,102 @@ Class acmart Warning: Some images may lack descriptions.
 
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
-
-Overfull \vbox (1.82399pt too high) has occurred while \output is active []
-
-
 [11.11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
  (master-doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
-Package rerunfilecheck Info: File `master-doc.out' has not changed.
-(rerunfilecheck)             Checksum: 47D35573B7EAF426188F1656D66554A3;3989.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
+
+
+Package rerunfilecheck Warning: File `master-doc.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `master-doc.out':
+(rerunfilecheck)             Before: 47D35573B7EAF426188F1656D66554A3;3989
+(rerunfilecheck)             After:  7B767E5F01367D3D17E26E69974362EB;4134.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 21550 strings out of 481545
- 328224 string characters out of 2913488
- 895104 words of memory out of 3000000
- 35691 multiletter control sequences out of 15000+200000
- 702887 words of font info for 318 fonts, out of 3000000 for 9000
+ 21559 strings out of 481545
+ 328339 string characters out of 2913488
+ 880675 words of memory out of 3000000
+ 35692 multiletter control sequences out of 15000+200000
+ 701693 words of font info for 312 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 63i,13n,100p,1446b,1729s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/l
-btn_ncsllp.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvip
-s/inconsolata/i4-ts1.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/font
-s/enc/dvips/inconsolata/i4-t1-4.enc}{C:/Users/leona/AppData/Local/Programs/MiKT
-eX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/leona/AppData/Local/
-Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/leona/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/
-Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_7g
-rukw.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libe
-rtine/lbtn_nh77jq.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/e
-nc/dvips/libertine/lbtn_76gpa5.enc}<C:/Users/leona/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/leona/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/U
-sers/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/Libertine
-MathMI7.pfb><C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/libertine/LinBiolinumT.pfb><C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/leona/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumTI.pfb><C:/Users/leon
-a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.
-pfb><C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libert
-ine/LinLibertineTB.pfb><C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/libertine/LinLibertineTI.pfb><C:/Users/leona/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/leona/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb>
-Output written on master-doc.pdf (11 pages, 963482 bytes).
+ 63i,13n,100p,1446b,2249s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{subsubsection.5.2.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.2.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.2.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.9.6} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.9.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.9.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.9.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.8.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.8.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbt
+n_ncsllp.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/
+inconsolata/i4-ts1.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/
+enc/dvips/inconsolata/i4-t1-4.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/leona/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/leona/App
+Data/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Us
+ers/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_7gru
+kw.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libert
+ine/lbtn_nh77jq.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
+/dvips/libertine/lbtn_76gpa5.enc}<C:/Users/leona/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/leona/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Use
+rs/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMa
+thMI7.pfb><C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+libertine/LinBiolinumT.pfb><C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/leona/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumTI.pfb><C:/Users/leona/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pf
+b><C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertin
+e/LinLibertineTB.pfb><C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/libertine/LinLibertineTI.pfb><C:/Users/leona/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/leona/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb>
+Output written on master-doc.pdf (11 pages, 965702 bytes).
 PDF statistics:
- 566 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
+ 583 PDF objects out of 1000 (max. 8388607)
+ 180 named destinations out of 1000 (max. 500000)
  60194 words of extra memory for PDF output out of 61914 (max. 10000000)
 
