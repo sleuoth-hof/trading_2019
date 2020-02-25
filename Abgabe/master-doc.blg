@@ -1,8 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: master-doc.aux
 The style file: ACM-Reference-Format.bst
 Database file #1: master-doc.bib
+Warning--entry type for "vorlesung" isn't style-file defined
+--line 11 of file master-doc.bib
 Warning--entry type for "pro19" isn't style-file defined
---line 41 of file master-doc.bib
+--line 64 of file master-doc.bib
 Warning--no key, author in mrj20
 Warning--no author, editor, organization, or key in mrj20
 Warning--to sort, need author or key in mrj20
@@ -34,5 +36,10 @@ Warning--empty year in ber201
 Warning--empty year in ber20
 Warning--empty year in taLib
 Warning--empty year in gekko
+Warning--empty year in vorlesung
 Warning--empty year in ZDiagramm
-(There were 33 warnings)
+Warning--empty year in dtw
+Warning--empty year in spark
+Warning--empty year in haasbot
+Warning--empty year in gekko2
+(There were 39 warnings)

@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{19}
+\begin{thebibliography}{24}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -190,6 +190,19 @@
 \shownote{Accessed: 10.02.2020.}
 
 
+\bibitem[\protect\citeauthoryear{Leuoth}{Leuoth}{[n.d.]}]%
+        {vorlesung}
+\bibfield{author}{\bibinfo{person}{Prof. Dr.~Sebastian Leuoth}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Applied Big Data Analytics, Grundlagen Data
+  Warehouse}.
+\newblock
+  \bibinfo{howpublished}{\url{https://moodle.hof-university.de/pluginfile.php/97284/mod_folder/content/0/Analytics_01.pdf?forcedownload=1}}.
+\newblock
+\newblock
+\shownote{Accessed: 18.02.2019.}
+
+
 \bibitem[\protect\citeauthoryear{{Mikhail Levkovsky}}{{Mikhail
   Levkovsky}}{2019}]%
         {medCsvParq}
@@ -221,6 +234,30 @@
 \tempurl}
 \newblock
 \shownote{[Online; accessed 15.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{Stefan~Luber}{Stefan~Luber}{[n.d.]a}]%
+        {dtw}
+\bibfield{author}{\bibinfo{person}{Nico~Litzel Stefan~Luber}.}
+  \bibinfo{year}{[n.d.]}\natexlab{a}.
+\newblock \bibinfo{title}{Was ist ein Data Ware House?}
+\newblock
+  \bibinfo{howpublished}{\url{https://www.bigdata-insider.de/was-ist-ein-data-warehouse-a-606701/}}.
+\newblock
+\newblock
+\shownote{Accessed: 18.12.2019.}
+
+
+\bibitem[\protect\citeauthoryear{Stefan~Luber}{Stefan~Luber}{[n.d.]b}]%
+        {spark}
+\bibfield{author}{\bibinfo{person}{Nico~Litzel Stefan~Luber}.}
+  \bibinfo{year}{[n.d.]}\natexlab{b}.
+\newblock \bibinfo{title}{Was ist ein Spark?}
+\newblock
+  \bibinfo{howpublished}{\url{https://www.bigdata-insider.de/was-ist-spark-a-572706/}}.
+\newblock
+\newblock
+\shownote{Accessed: 18.12.2019.}
 
 
 \bibitem[\protect\citeauthoryear{{Thomas Spicer}}{{Thomas Spicer}}{2019}]%
@@ -268,6 +305,31 @@
 \tempurl}
 \newblock
 \shownote{[Online; abgerufen am 22.02.2020].}
+
+
+\bibitem[\protect\citeauthoryear{unknown}{unknown}{[n.d.]}]%
+        {haasbot}
+\bibfield{author}{\bibinfo{person}{unknown}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Bitcoin-Trading-Bot: Haasbot automatisiert deinen
+  Bitcoin-Handel}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.btc-echo.de/bitcoin-trading-bot-haasbot-automatisiert-bitcoin-handel/}}.
+\newblock
+\newblock
+\shownote{Accessed: 25.02.2020.}
+
+
+\bibitem[\protect\citeauthoryear{van Rossum}{van Rossum}{[n.d.]}]%
+        {gekko2}
+\bibfield{author}{\bibinfo{person}{Mike van Rossum}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{About Gekko}.
+\newblock
+  \bibinfo{howpublished}{\url{https://gekko.wizb.it/docs/introduction/about_gekko.html}}.
+\newblock
+\newblock
+\shownote{Accessed: 25.02.2020.}
 
 
 \bibitem[\protect\citeauthoryear{{Wikipedia contributors}}{{Wikipedia
