@@ -30,11 +30,10 @@ Die eigentliche NEO-Strategie baut auf einer RSI Bull/Bear-Strategie auf, welche
 
 
 \begin{figure}
-\begin{equation}
+\begin{equation*}
 \resizebox{\columnwidth}{!}{
-\text{RSI}=100\cdot\frac{\text{\o\ Summe Gewinn positiver Tage}}{\text{\o\ Summe Gewinn positiver Tage }+\text{ \o\ Summe Verlust negativer Tage}}
-}
-\end{equation}
+\text{RSI}=100\cdot\frac{\text{\o\ Summe Gewinn positiver Tage}}{\text{\o\ Summe Gewinn positiver Tage }+\text{ \o\ Summe Verlust negativer Tage}}}
+\end{equation*}
 \caption{Berechnung RSI}
 \end{figure}
 
@@ -43,11 +42,11 @@ Die eigentliche NEO-Strategie baut auf einer RSI Bull/Bear-Strategie auf, welche
 Durch die Multiplikation oszilliert der Indikator zwischen 0 und 100, wodurch er sich sehr gut in Verbindung mit Parametern verwenden lässt. Das Überschreiten eines oberen Grenzwertes bedeutet einen überkauften Markt und ein Unterschreiten des unteren Grenzwertes einen überverkauften Markt. Bei Wiedereintritt in die "'Neutrale-Zone"', also zwischen den Extremwertbereichen, werden so die Kauf- bzw. Verkaufssignale abgegeben, vgl. \cite{ber20}. In der Projektarbeit der Projektgruppe"=DeepCryptoTrading wird bereits eine Analyse der ursprünglichen Gekko-Strategie vorgenommen: "`Zwei unterschiedlich schnelle Moving Averages erkennen, ob es sich um einen Bull oder einen Bear-Market handelt. Anhand dessen wird entweder ein RSI verwendet, der für einen Bull-Market parametrisiert wurde oder einer, der für einen Bear-Market parametrisiert wurde. Dieser RSI wird dann auf zwei Thresholds geprüft, ob Short oder Long als Advice gegeben werden soll. Diese Thresholds sind dabei auch abhängig davon, ob es sich um einen Bull- oder einen Bear-Market handelt."' \cite{pro19}. Die Erweiterung der NEO-Strategie besteht bei der Projektgruppe nun darin, dass der Rate of Change-Indikator (ROC) zur Unterteilung des Bull-Market in einen Idle-Bull-Market und einen Real-Bull-Market hinzugezogen wird. Der ROC berechnet sich wie folgt: \\ 
 
 \begin{figure}
-\begin{equation}
+\begin{equation*}
 %\resizebox{\columnwidth}{!}{
 \text{ROC}=100\cdot\frac{\text{Schlusskurs aktuell}- \text{Schlusskurs alt}}{\text{Schlusskurs alt}}
 %}
-\end{equation}
+\end{equation*}
 \caption{Berechnung ROC}
 \end{figure}
 
@@ -57,20 +56,18 @@ Der ROC fächert den Bull-Market somit nochmals auf, um aufgrund der Veränderun
 Aufgrund dieses Nachteils setzt die in der Studienarbeit angepasste NEO-Strategie, auf den Aroon-Indikator als Filter, anstatt auf den ROC und den SMA. Der Aroon-Indikator besteht aus den zwei Linien Aroon Up und Aroon Down, welche das Ziel verfolgen die aktuelle Marktphase im Hinblick auf Aufwärtstrend, Abwärtstrend und Seitwärtstrend zu ermitteln, vgl. \cite{ber201}. Die Berechnung der zwei Indikatoren-Linien setzt sich wie folgt zusammen: \\
 
 \begin{figure}
-\begin{equation}
+\begin{equation*}
 \resizebox{\columnwidth}{!}{
-\text{Aroon Up}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodenhoch}}{\text{Periodenlänge}}
-}
-\end{equation}
+\text{Aroon Up}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodenhoch}}{\text{Periodenlänge}}}
+\end{equation*}
 \caption{Berechnung Aroon Up}
 \end{figure}
 
 \begin{figure}
-\begin{equation}
+\begin{equation*}
 \resizebox{\columnwidth}{!}{
-\text{Aroon Down}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodentief}}{\text{Periodenlänge}}
-}
-\end{equation}
+\text{Aroon Down}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodentief}}{\text{Periodenlänge}}}
+\end{equation*}
 \caption{Berechnung Aroon Down}
 \end{figure}
 
