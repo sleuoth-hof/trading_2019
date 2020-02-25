@@ -1,0 +1,3 @@
+\section{Interpolation}
+
+Nachdem die Daten mithilfe von den entsprechenden APIs gesammelt wurden, konnten diese weiterverarbeitet werden. Zunächst wurden die Daten so aufbereitet, dass pro Tag ein Eintrag existiert. Dafür wurde jeweils der letzte Wert des Tages übernommen. Da einige Währungen nicht für jeden Tag Werte aufgezeichnet haben, sollten die fehlenden Werte mithilfe von einer Interpolation aufgefüllt werden. Dafür wurde eine lineare Regression herangezogen. Diese legte sozusagen eine Gerade zwischen die zwei letzten Einträge und berechnet auf Basis dieser die fehlenden Werte.  Danach konnten die so gesammelten und entsprechend aufbereiteten Daten für die darauffolgende Strategieimplementierung und zur Entwicklung des Bots verwendet werden.

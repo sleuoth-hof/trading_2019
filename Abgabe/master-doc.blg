@@ -1,14 +1,8 @@
-This is BibTeX, Version 0.99d (TeX Live 2019)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: master-doc.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: master-doc.aux
 The style file: ACM-Reference-Format.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: master-doc.bib
 Warning--entry type for "pro19" isn't style-file defined
---line 15 of file master-doc.bib
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+--line 41 of file master-doc.bib
 Warning--no key, author in mrj20
 Warning--no author, editor, organization, or key in mrj20
 Warning--to sort, need author or key in mrj20
@@ -18,16 +12,12 @@ Warning--to sort, need author or key in tra20
 Warning--no key, author in aro20
 Warning--no author, editor, organization, or key in aro20
 Warning--to sort, need author or key in aro20
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--no key, author in aro20
 Warning--no key, author in aro20
 Warning--no key, author in mrj20
 Warning--no key, author in mrj20
 Warning--no key, author in tra20
 Warning--no key, author in tra20
-Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--no key, author in mrj20
 Warning--no author, editor, organization, or key in mrj20
 Warning--empty author in mrj20
@@ -44,45 +34,5 @@ Warning--empty year in ber201
 Warning--empty year in ber20
 Warning--empty year in taLib
 Warning--empty year in gekko
-You've used 18 entries,
-            5897 wiz_defined-function locations,
-            1407 strings with 16931 characters,
-and the built_in function-call counts, 13325 in all, are:
-= -- 1363
-> -- 316
-< -- 0
-+ -- 81
-- -- 129
-* -- 761
-:= -- 1464
-add.period$ -- 104
-call.type$ -- 18
-change.case$ -- 87
-chr.to.int$ -- 59
-cite$ -- 61
-duplicate$ -- 1264
-empty$ -- 926
-format.name$ -- 117
-if$ -- 2906
-int.to.chr$ -- 5
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 255
-num.names$ -- 117
-pop$ -- 543
-preamble$ -- 1
-purify$ -- 202
-quote$ -- 0
-skip$ -- 447
-stack$ -- 0
-substring$ -- 869
-swap$ -- 112
-text.length$ -- 35
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 522
-warning$ -- 31
-while$ -- 125
-width$ -- 0
-write$ -- 404
-(There were 32 warnings)
+Warning--empty year in ZDiagramm
+(There were 33 warnings)
