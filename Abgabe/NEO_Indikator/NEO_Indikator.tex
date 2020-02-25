@@ -28,30 +28,51 @@ Eine ausführliche Dokumentation der Indikatorenparameter und der Funktionen fin
 
 Die eigentliche NEO-Strategie baut auf einer RSI Bull/Bear-Strategie auf, welche Märkte anhand ihrer Trends analysieren soll, vgl. \cite{pro19} . Um Nachzuvollziehen können wie der hier verwendete Relativ Strength Index (RSI) funktioniert, soll kurz auf dessen Berechnung eingegangen werden. Der RSI setzt im Grunde die Stärke von Kursverlusten mit der Stärke von Kursgewinnen in einem gewünschten Zeitraum zueinander ins Verhältnis. Die Formel hierfür lautet: \\ 
 
-\begin{figure}[!ht]
+
+\begin{figure}
 \begin{equation}
+\resizebox{\columnwidth}{!}{
 \text{RSI}=100\cdot\frac{\text{\o\ Summe Gewinn positiver Tage}}{\text{\o\ Summe Gewinn positiver Tage }+\text{ \o\ Summe Verlust negativer Tage}}
+}
 \end{equation}
+\caption{Berechnung RSI}
 \end{figure}
-} \\
+
+
 
 Durch die Multiplikation oszilliert der Indikator zwischen 0 und 100, wodurch er sich sehr gut in Verbindung mit Parametern verwenden lässt. Das Überschreiten eines oberen Grenzwertes bedeutet einen überkauften Markt und ein Unterschreiten des unteren Grenzwertes einen überverkauften Markt. Bei Wiedereintritt in die "'Neutrale-Zone"', also zwischen den Extremwertbereichen, werden so die Kauf- bzw. Verkaufssignale abgegeben, vgl. \cite{ber20}. In der Projektarbeit der Projektgruppe"=DeepCryptoTrading wird bereits eine Analyse der ursprünglichen Gekko-Strategie vorgenommen: "`Zwei unterschiedlich schnelle Moving Averages erkennen, ob es sich um einen Bull oder einen Bear-Market handelt. Anhand dessen wird entweder ein RSI verwendet, der für einen Bull-Market parametrisiert wurde oder einer, der für einen Bear-Market parametrisiert wurde. Dieser RSI wird dann auf zwei Thresholds geprüft, ob Short oder Long als Advice gegeben werden soll. Diese Thresholds sind dabei auch abhängig davon, ob es sich um einen Bull- oder einen Bear-Market handelt."' \cite{pro19}. Die Erweiterung der NEO-Strategie besteht bei der Projektgruppe nun darin, dass der Rate of Change-Indikator (ROC) zur Unterteilung des Bull-Market in einen Idle-Bull-Market und einen Real-Bull-Market hinzugezogen wird. Der ROC berechnet sich wie folgt: \\ 
 
+\begin{figure}
 \begin{equation}
+%\resizebox{\columnwidth}{!}{
 \text{ROC}=100\cdot\frac{\text{Schlusskurs aktuell}- \text{Schlusskurs alt}}{\text{Schlusskurs alt}}
-\end{equation} \\
+%}
+\end{equation}
+\caption{Berechnung ROC}
+\end{figure}
+
 
 Der ROC fächert den Bull-Market somit nochmals auf, um aufgrund der Veränderungen unterscheiden zu können, ob der Bulll-Market von Dauer ist. Somit kann die Entscheidung des Kaufs oder Verkaufs präziser getroffen werden bzw. die Intaktheit des Marktes bestimmt werden. Der Nachteil des ROC ist, dass er keinerlei Glättungsfaktoren beinhaltet und somit bei unruhigen Kursen eine sehr sprunghafte Änderung erfolgen kann, vgl. \cite{tra20}.\\
 
 Aufgrund dieses Nachteils setzt die in der Studienarbeit angepasste NEO-Strategie, auf den Aroon-Indikator als Filter, anstatt auf den ROC und den SMA. Der Aroon-Indikator besteht aus den zwei Linien Aroon Up und Aroon Down, welche das Ziel verfolgen die aktuelle Marktphase im Hinblick auf Aufwärtstrend, Abwärtstrend und Seitwärtstrend zu ermitteln, vgl. \cite{ber201}. Die Berechnung der zwei Indikatoren-Linien setzt sich wie folgt zusammen: \\
 
+\begin{figure}
 \begin{equation}
+\resizebox{\columnwidth}{!}{
 \text{Aroon Up}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodenhoch}}{\text{Periodenlänge}}
-\end{equation} \\
+}
+\end{equation}
+\caption{Berechnung Aroon Up}
+\end{figure}
 
+\begin{figure}
 \begin{equation}
+\resizebox{\columnwidth}{!}{
 \text{Aroon Down}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodentief}}{\text{Periodenlänge}}
-\end{equation} \\
+}
+\end{equation}
+\caption{Berechnung Aroon Down}
+\end{figure}
 
 Der Indikator, welcher sich ebenfalls in Wertebereichen zwischen 100 und 0 bewegt, zeigt somit in den oberen bzw. unteren Extremwertbereichen einen Aufwärtstrend bzw. Abwärtstrend an und bei Überschneidungen der beiden Indikatorlinien einen Trendwechsel. Er berücksichtigt keine preislichen Aspekte, sondern lediglich zeitliche, was dazu führt das kleinere Schwankungen ihn durchaus aus der Bahn werfen können, er jedoch bei längeren Trends, diese zuverlässig anzeigt, vgl. \cite{aro20}. Dadurch wird das Risiko bewusst in Kauf genommen kleinere Trades zu verpassen, dafür größere Trades hingegen präziser zu erkennen. Die Abwandlung der NEO-Strategie soll also den Aroon als Filter einsetzen, um mögliche Trends zu identifizieren und in Kombination mit dem RSI auch die Stärke jener zu evaluieren bzw. korrekt zu deuten. Mit den Parameterwerten für die Extremwerte von RSI und dem Aroon-Paar muss experimentiert werden, wobei in den meisten Quellen die Werte wie folgt gesetzt werden: \\
 
@@ -72,7 +93,7 @@ Um nun einen Konsens aus den beiden Indikatoren-Empfehlungen zu erlangen, werden
 %MATRIX:
 
 \begin{table}[h] 
-	\resizebox{\textwidth}{!}{
+	\resizebox{\columnwidth}{!}{
 		\begin{tabular}{|l|l|l|l|l|l|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{NEO}} & Bullenmarkt ($+$) & bull. Trendw. ($++$) & Bärenmarkt ($-$) & bär. Trendw. ($--$) & Neutraler Markt \\ \hline
