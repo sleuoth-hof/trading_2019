@@ -1,12 +1,12 @@
 \babel@toc {ngerman}{}
 \contentsline {figure}{\numberline {1}{\ignorespaces Berechnungsformeln für den Percentage Price Oscillator \citep {tvWikiPpo}\relax }}{3}{figure.caption.4}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Trendbestimmung für den Percentage Price Oscillator\relax }}{3}{figure.caption.6}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Trendbestimmung für den Percentage Price Oscillator\relax }}{4}{figure.caption.6}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Signalbestimmung für den Percentage Price Oscillator\relax }}{4}{figure.caption.7}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Gewichtung der Entscheidungsfaktoren für den Percentage Price Oscillator\relax }}{4}{figure.caption.9}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Kerzendiagramm 'BTC-USD', (Veränderungen in Punkten)\relax }}{4}{figure.caption.10}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Liniendiagramm 'BTC-USD', (Änderung in \%; blau: PPO, rot: Signal)\relax }}{4}{figure.caption.11}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Berechnung RSI\relax }}{5}{figure.caption.12}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Berechnung ROC\relax }}{5}{figure.caption.13}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Berechnung ROC\relax }}{6}{figure.caption.13}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Berechnung Aroon Up\relax }}{6}{figure.caption.14}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Berechnung Aroon Down\relax }}{6}{figure.caption.15}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Beispiel für das Wahlverfahren\relax }}{7}{figure.caption.17}%
@@ -16,4 +16,4 @@
 \contentsline {figure}{\numberline {15}{\ignorespaces Trading Ablauf\relax }}{9}{figure.caption.21}%
 \contentsline {figure}{\numberline {16}{\ignorespaces Wireframe Dashboard\relax }}{9}{figure.caption.22}%
 \contentsline {figure}{\numberline {17}{\ignorespaces Funktionalität Diagramm\relax }}{9}{figure.caption.23}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Bestimmung der Höhe einer Buy-Order\relax }}{9}{figure.caption.24}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Bestimmung der Höhe einer Buy-Order\relax }}{10}{figure.caption.24}%

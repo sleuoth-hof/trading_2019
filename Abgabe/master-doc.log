@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.25)  25 FEB 2020 20:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.25)  25 FEB 2020 21:36
 entering extended mode
 **./master-doc.tex
 (master-doc.tex
@@ -1331,26 +1331,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-(Datenaufbereitung/interpolation.tex) (ppo/ppo.tex
+(Datenaufbereitung/api.tex) (Datenaufbereitung/interpolation.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+ [2.2])
+(ppo/ppo.tex
 Overfull \hbox (1.05984pt too wide) in paragraph at lines 5--6
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) ge-nau-er be-stimm-ten Zeit-raum au-to-ma-t
 i-sier-te Aktien-Transaktionen
  []
 
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 7.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 7.
-[2.2]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 15.
-
 
 Class acmart Warning: A possible image without description on input line 34.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 40.
-
+[3.3]
 ("C:\Users\leona\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
 sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
@@ -1376,14 +1378,13 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 
 Class acmart Warning: A possible image without description on input line 58.
 
-[3.3]
 
 Class acmart Warning: A possible image without description on input line 74.
 
 
 Class acmart Warning: A possible image without description on input line 88.
 
-<ppo/graph_btcusd_ppo_2.png, id=210, 1408.26125pt x 378.41376pt>
+<ppo/graph_btcusd_ppo_2.png, id=204, 1408.26125pt x 378.41376pt>
 File: ppo/graph_btcusd_ppo_2.png Graphic file (type png)
 <use ppo/graph_btcusd_ppo_2.png>
 Package pdftex.def Info: ppo/graph_btcusd_ppo_2.png  used on input line 96.
@@ -1396,7 +1397,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 96--97
 
 Class acmart Warning: A possible image without description on input line 99.
 
-<ppo/graph_btcusd_ppo_1.png, id=212, 1321.93875pt x 379.4175pt>
+<ppo/graph_btcusd_ppo_1.png, id=206, 1321.93875pt x 379.4175pt>
 File: ppo/graph_btcusd_ppo_1.png Graphic file (type png)
 <use ppo/graph_btcusd_ppo_1.png>
 Package pdftex.def Info: ppo/graph_btcusd_ppo_1.png  used on input line 102.
@@ -1411,6 +1412,9 @@ Class acmart Warning: A possible image without description on input line 105.
 
 [4.4 <./ppo/graph_btcusd_ppo_2.png> <./ppo/graph_btcusd_ppo_1.png>])
 (NEO_Indikator/NEO_Indikator.tex
+Underfull \vbox (badness 3623) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
@@ -1446,6 +1450,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
+[5.5]
 
 Class acmart Warning: A possible image without description on input line 51.
 
@@ -1459,7 +1464,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-[5.5]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -1531,12 +1535,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 [6.6]) (wahlverfahren/Doku.tex
-<wahlverfahren/wahlverfahren.png, id=310, 362.10281pt x 567.62062pt>
+<wahlverfahren/wahlverfahren.png, id=316, 362.10281pt x 567.62062pt>
 File: wahlverfahren/wahlverfahren.png Graphic file (type png)
 <use wahlverfahren/wahlverfahren.png>
 Package pdftex.def Info: wahlverfahren/wahlverfahren.png  used on input line 16
@@ -1546,11 +1553,8 @@ Package pdftex.def Info: wahlverfahren/wahlverfahren.png  used on input line 16
 
 Class acmart Warning: A possible image without description on input line 19.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [7.7 <./wahlverfahren/wahlverfahren.png>]
-<wahlverfahren/diagrammVerkauf.png, id=329, 377.91188pt x 594.72188pt>
+<wahlverfahren/diagrammVerkauf.png, id=333, 377.91188pt x 594.72188pt>
 File: wahlverfahren/diagrammVerkauf.png Graphic file (type png)
 <use wahlverfahren/diagrammVerkauf.png>
 Package pdftex.def Info: wahlverfahren/diagrammVerkauf.png  used on input line 
@@ -1560,7 +1564,10 @@ Package pdftex.def Info: wahlverfahren/diagrammVerkauf.png  used on input line
 
 Class acmart Warning: A possible image without description on input line 40.
 
-<wahlverfahren/tabelleVerkauf.png, id=330, 299.61937pt x 117.43875pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<wahlverfahren/tabelleVerkauf.png, id=334, 299.61937pt x 117.43875pt>
 File: wahlverfahren/tabelleVerkauf.png Graphic file (type png)
 <use wahlverfahren/tabelleVerkauf.png>
 Package pdftex.def Info: wahlverfahren/tabelleVerkauf.png  used on input line 4
@@ -1572,24 +1579,21 @@ Class acmart Warning: A possible image without description on input line 47.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 2012) has occurred while \output is active []
-
-<wahlverfahren/diagrammKauf.png, id=332, 487.06969pt x 601.4972pt>
+<wahlverfahren/diagrammKauf.png, id=336, 487.06969pt x 601.4972pt>
 File: wahlverfahren/diagrammKauf.png Graphic file (type png)
 <use wahlverfahren/diagrammKauf.png>
 Package pdftex.def Info: wahlverfahren/diagrammKauf.png  used on input line 56.
 
 (pdftex.def)             Requested size: 241.14749pt x 297.80168pt.
 
-
 Class acmart Warning: A possible image without description on input line 59.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (bot/bot.tex
-<bot/trading_diagramm.png, id=334, 596.2275pt x 289.08pt>
+) (bot/bot.tex [8.8 <./wahlverfahren/diagrammVerkauf.png> <./wahlverfahren/tabe
+lleVerkauf.png>]
+<bot/trading_diagramm.png, id=351, 596.2275pt x 289.08pt>
 File: bot/trading_diagramm.png Graphic file (type png)
 <use bot/trading_diagramm.png>
 Package pdftex.def Info: bot/trading_diagramm.png  used on input line 16.
@@ -1598,7 +1602,7 @@ Package pdftex.def Info: bot/trading_diagramm.png  used on input line 16.
 
 Class acmart Warning: A possible image without description on input line 19.
 
-<bot/wireframe_bot.png, id=335, 684.30656pt x 495.95288pt>
+<bot/wireframe_bot.png, id=352, 684.30656pt x 495.95288pt>
 File: bot/wireframe_bot.png Graphic file (type png)
 <use bot/wireframe_bot.png>
 Package pdftex.def Info: bot/wireframe_bot.png  used on input line 26.
@@ -1606,14 +1610,11 @@ Package pdftex.def Info: bot/wireframe_bot.png  used on input line 26.
 
 Class acmart Warning: A possible image without description on input line 29.
 
-[8.8 <./wahlverfahren/diagrammVerkauf.png> <./wahlverfahren/tabelleVerkauf.png>
-]
-<bot/funktionen_diagramm.png, id=346, 835.2003pt x 569.2467pt>
+<bot/funktionen_diagramm.png, id=353, 835.2003pt x 569.2467pt>
 File: bot/funktionen_diagramm.png Graphic file (type png)
 <use bot/funktionen_diagramm.png>
 Package pdftex.def Info: bot/funktionen_diagramm.png  used on input line 38.
 (pdftex.def)             Requested size: 142.26378pt x 96.96175pt.
-
 
 Class acmart Warning: A possible image without description on input line 41.
 
@@ -1622,6 +1623,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--43
 
  []
 
+[9.9 <./wahlverfahren/diagrammKauf.png> <./bot/trading_diagramm.png> <./bot/wir
+eframe_bot.png> <./bot/funktionen_diagramm.png>]
 LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 5
 5.
 
@@ -1639,8 +1642,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 Class acmart Warning: A possible image without description on input line 65.
 
-[9.9 <./wahlverfahren/diagrammKauf.png> <./bot/trading_diagramm.png> <./bot/wir
-eframe_bot.png> <./bot/funktionen_diagramm.png>]) (master-doc.bbl
+) (master-doc.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 89--97
 []\T1/LinuxLibertineT-TLF/m/n/7 (+20) Rene Ber-teit. [n.d.].  Indikatoren-Knowh
 ow: Aroon Up/-Down.
@@ -1660,32 +1662,32 @@ taerke -[] index -[] rsi -[] was -[] steckt -[] hinter -[] diesem -[]
 
 LaTeX Info: Redefining \tempurl on input line 119.
 LaTeX Info: Redefining \tempurl on input line 136.
-LaTeX Info: Redefining \tempurl on input line 216.
-LaTeX Info: Redefining \tempurl on input line 232.
+LaTeX Info: Redefining \tempurl on input line 228.
+LaTeX Info: Redefining \tempurl on input line 244.
 
-Underfull \hbox (badness 1803) in paragraph at lines 226--237
+Underfull \hbox (badness 1803) in paragraph at lines 238--249
 []\T1/LinuxLibertineT-TLF/m/n/7 (+20) SparxSystems Soft-wa-re. [n.d.].  Zu-stan
 ds-dia-gramm (State Ma-chi-ne Dia-
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 226--237
+Underfull \hbox (badness 1132) in paragraph at lines 238--249
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) gram).    []$https : / / www . sparxsystems
  . de / ressourcen / literatur / leseprobe -[] zu -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--237
+Underfull \hbox (badness 10000) in paragraph at lines 238--249
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) projektabwicklung -[] mit -[] uml -[] und -
 [] enterprise -[] architect / zustandsdiagramm -[]
  []
 
-LaTeX Info: Redefining \tempurl on input line 271.
-LaTeX Info: Redefining \tempurl on input line 287.
-LaTeX Info: Redefining \tempurl on input line 303.
-LaTeX Info: Redefining \tempurl on input line 344.
-LaTeX Info: Redefining \tempurl on input line 360.
-)
+LaTeX Info: Redefining \tempurl on input line 283.
+LaTeX Info: Redefining \tempurl on input line 299.
+LaTeX Info: Redefining \tempurl on input line 315.
+LaTeX Info: Redefining \tempurl on input line 367.
+LaTeX Info: Redefining \tempurl on input line 383.
+[10.10])
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 9.0pt on input line 215.
  (master-doc.lof)
@@ -1704,38 +1706,26 @@ Class acmart Warning: Some images may lack descriptions.
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
-[10.10]
-Overfull \vbox (29.75pt too high) has occurred while \output is active []
+Overfull \vbox (1.82399pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (29.75pt too high) has occurred while \output is active []
-
- [11.11]
+[11.11]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
-
-(master-doc.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ (master-doc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `master-doc.out' has not changed.
-(rerunfilecheck)             Checksum: 8F6142F0D446FECB77A074E2B13A7B72;3805.
+(rerunfilecheck)             Checksum: 47D35573B7EAF426188F1656D66554A3;3989.
  ) 
 Here is how much of TeX's memory you used:
- 21530 strings out of 481545
- 327836 string characters out of 2913488
- 899320 words of memory out of 3000000
- 35683 multiletter control sequences out of 15000+200000
- 702341 words of font info for 314 fonts, out of 3000000 for 9000
+ 21550 strings out of 481545
+ 328224 string characters out of 2913488
+ 895104 words of memory out of 3000000
+ 35691 multiletter control sequences out of 15000+200000
+ 702887 words of font info for 318 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 63i,13n,100p,1446b,1870s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,13n,100p,1446b,1729s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/l
 btn_ncsllp.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvip
 s/inconsolata/i4-ts1.enc}{C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/font
@@ -1760,9 +1750,9 @@ ine/LinLibertineTB.pfb><C:/Users/leona/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/libertine/LinLibertineTI.pfb><C:/Users/leona/AppData/Local/Program
 s/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/leona/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb>
-Output written on master-doc.pdf (11 pages, 960554 bytes).
+Output written on master-doc.pdf (11 pages, 963482 bytes).
 PDF statistics:
- 554 PDF objects out of 1000 (max. 8388607)
- 162 named destinations out of 1000 (max. 500000)
- 60186 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 566 PDF objects out of 1000 (max. 8388607)
+ 165 named destinations out of 1000 (max. 500000)
+ 60194 words of extra memory for PDF output out of 61914 (max. 10000000)
 

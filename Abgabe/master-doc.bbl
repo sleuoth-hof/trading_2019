@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{24}
+\begin{thebibliography}{26}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -178,6 +178,18 @@
 \shownote{Accessed: 10.02.2020.}
 
 
+\bibitem[\protect\citeauthoryear{Klein}{Klein}{[n.d.]}]%
+        {kaggle}
+\bibfield{author}{\bibinfo{person}{Carsten Klein}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Quick look at the Bitfinex crypto currency dataset}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.kaggle.com/tencars/bitfinexdataset}}.
+\newblock
+\newblock
+\shownote{Accessed: 14.02.2020.}
+
+
 \bibitem[\protect\citeauthoryear{la~Gre}{la~Gre}{[n.d.]}]%
         {gekko}
 \bibfield{author}{\bibinfo{person}{Filip la Gre}.}
@@ -307,10 +319,10 @@
 \shownote{[Online; abgerufen am 22.02.2020].}
 
 
-\bibitem[\protect\citeauthoryear{unknown}{unknown}{[n.d.]}]%
+\bibitem[\protect\citeauthoryear{unknown}{unknown}{[n.d.]a}]%
         {haasbot}
 \bibfield{author}{\bibinfo{person}{unknown}.}
-  \bibinfo{year}{[n.d.]}\natexlab{}.
+  \bibinfo{year}{[n.d.]}\natexlab{a}.
 \newblock \bibinfo{title}{Bitcoin-Trading-Bot: Haasbot automatisiert deinen
   Bitcoin-Handel}.
 \newblock
@@ -318,6 +330,17 @@
 \newblock
 \newblock
 \shownote{Accessed: 25.02.2020.}
+
+
+\bibitem[\protect\citeauthoryear{unknown}{unknown}{[n.d.]b}]%
+        {bitfinex}
+\bibfield{author}{\bibinfo{person}{unknown}.}
+  \bibinfo{year}{[n.d.]}\natexlab{b}.
+\newblock \bibinfo{title}{Bitfinex Documentation}.
+\newblock \bibinfo{howpublished}{\url{https://docs.bitfinex.com/docs}}.
+\newblock
+\newblock
+\shownote{Accessed: 14.02.2020.}
 
 
 \bibitem[\protect\citeauthoryear{van Rossum}{van Rossum}{[n.d.]}]%
