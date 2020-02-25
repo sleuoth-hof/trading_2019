@@ -28,10 +28,11 @@ Eine ausführliche Dokumentation der Indikatorenparameter und der Funktionen fin
 
 Die eigentliche NEO-Strategie baut auf einer RSI Bull/Bear-Strategie auf, welche Märkte anhand ihrer Trends analysieren soll, vgl. \cite{pro19} . Um Nachzuvollziehen können wie der hier verwendete Relativ Strength Index (RSI) funktioniert, soll kurz auf dessen Berechnung eingegangen werden. Der RSI setzt im Grunde die Stärke von Kursverlusten mit der Stärke von Kursgewinnen in einem gewünschten Zeitraum zueinander ins Verhältnis. Die Formel hierfür lautet: \\ 
 
-\resizebox{\textwidth}{!}{%
+\begin{figure}[!ht]
 \begin{equation}
 \text{RSI}=100\cdot\frac{\text{\o\ Summe Gewinn positiver Tage}}{\text{\o\ Summe Gewinn positiver Tage }+\text{ \o\ Summe Verlust negativer Tage}}
 \end{equation}
+\end{figure}
 } \\
 
 Durch die Multiplikation oszilliert der Indikator zwischen 0 und 100, wodurch er sich sehr gut in Verbindung mit Parametern verwenden lässt. Das Überschreiten eines oberen Grenzwertes bedeutet einen überkauften Markt und ein Unterschreiten des unteren Grenzwertes einen überverkauften Markt. Bei Wiedereintritt in die "'Neutrale-Zone"', also zwischen den Extremwertbereichen, werden so die Kauf- bzw. Verkaufssignale abgegeben, vgl. \cite{ber20}. In der Projektarbeit der Projektgruppe"=DeepCryptoTrading wird bereits eine Analyse der ursprünglichen Gekko-Strategie vorgenommen: "`Zwei unterschiedlich schnelle Moving Averages erkennen, ob es sich um einen Bull oder einen Bear-Market handelt. Anhand dessen wird entweder ein RSI verwendet, der für einen Bull-Market parametrisiert wurde oder einer, der für einen Bear-Market parametrisiert wurde. Dieser RSI wird dann auf zwei Thresholds geprüft, ob Short oder Long als Advice gegeben werden soll. Diese Thresholds sind dabei auch abhängig davon, ob es sich um einen Bull- oder einen Bear-Market handelt."' \cite{pro19}. Die Erweiterung der NEO-Strategie besteht bei der Projektgruppe nun darin, dass der Rate of Change-Indikator (ROC) zur Unterteilung des Bull-Market in einen Idle-Bull-Market und einen Real-Bull-Market hinzugezogen wird. Der ROC berechnet sich wie folgt: \\ 
