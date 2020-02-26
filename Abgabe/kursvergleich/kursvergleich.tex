@@ -37,7 +37,7 @@ Aus diesem Durchschnitt wird anschließend der Kurs mit der minimalen Punktezahl
 
 Der verbleibende Kurs ist der der Vergleichskurs dem der jeweilige Ausgangskurs folgt. Aus der Empfehlung des Vergleichskurses wird durch Vergleich mit der Empfehlung des Ausgangskurs eine neue Empfehlung abgeleitet. Stimmen die beiden Empfehlungen überein, wird das Signal verstärkt. Liefert der Ausgangskurs zum Beispiel ein schwaches Kaufsignal und der Vergleichskurs ein starkes, so wird als neue Empfehlung ebenfalls ein starkes Kaufsignal gesetzt. Liegen die Signale dagegen gegensätzlich, d.h. KursA bei V3 und KursV bei K2 wird eine Halteempfehlung ausgegeben.
 
-Wird hingegen kein Vergleichskurs gefunden, kann auch keine Empfehlung abgegeben werden.
+Wird hingegen kein Vergleichskurs gefunden, kann auch keine Empfehlung abgegeben werden. Um den Wert NULL zu vermeiden und dadurch die Weiterverarbeitung einfacher zu gestalten, wird die originale Indikatorempfehlung aus den Basisdaten eingetragen.  
 
 \subsubsection{Datenexport}
 Die Ergebnisse aus der Analyse werden für die Weiterverarbeitung wieder in CSV-Dateien geschrieben und exportiert. Um die Weiterverarbeitung im Recommender-System zu vereinfachen, wird die gleiche Struktur wie beim Import der Daten verwendet. 
