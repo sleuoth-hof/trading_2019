@@ -2,7 +2,7 @@
 
 \bibliographystyle{ACM-Reference-Format}
 
-\setcopyright{acmcopyright}
+\setcopyright{none}
 \copyrightyear{2020}
 \acmYear{2020}
 
@@ -12,7 +12,7 @@
 
 \usepackage[ngerman]{babel}
 \usepackage{graphicx}
-\usepackage{amssymb}
+%%\usepackage{amssymb}
 \usepackage{amsmath}
 
 \usepackage{url}
@@ -65,9 +65,17 @@
 \lstset{style=mystyle}
 
 \acmConference[FWPM:Big Data Analysis]{Big Data Analysis}{Wintersemenster, 2019}{Hof}
-\acmBooktitle{FWPM: FWPM:Big Data Analysis, Wintersemenster, 2019, Hof}
+\acmBooktitle{FWPM:Big Data Analysis, Wintersemenster, 2019, Hof}
 \acmPrice{}
 \acmISBN{}
+
+
+\settopmatter{printacmref=false}
+\settopmatter{printfolios=true}
+
+\renewcommand\footnotetextcopyrightpermission[1]{}
+
+
 
 
 \begin{document}
@@ -76,7 +84,7 @@
 %% TITLE TODO
 %%
 
-\title{Crypto Trading Recommender mittels Spark}
+\title[Crypto Trading Recommender mittels Spark]{Crypto Trading Recommender mittels Spark}
 
 \author{Tina Amann}
 \email{tina.amann@hof-university.de}
@@ -87,14 +95,7 @@
 \country{Germany}
 }
 
-\author{Samet Aslan}
-\email{samet.aslan@hof-university.de}
-\affiliation{
-\institution{Hochschule Hof}
-\streetaddress{Alfons-Goppel-Platz 1}
-\city{Hof an der Saale}
-\country{Germany}
-}
+
 
 \author{Daniel Eckardt}
 \email{daniel.eckardt@hof-university.de}
@@ -141,7 +142,16 @@
 \country{Germany}
 }
 
-\author{Prof. Dr. Sebastian Leuoth}
+\author{Leonardo Perak}
+\email{leonardo.perak@hof-university.de}
+\affiliation{
+\institution{Hochschule Hof}
+\streetaddress{Alfons-Goppel-Platz 1}
+\city{Hof an der Saale}
+\country{Germany}
+}
+
+\author{Sebastian Leuoth (Hrsg.)}
 \email{sebastian.leuoth@hof-university.de}
 \affiliation{
 \institution{Hochschule Hof}
@@ -155,12 +165,7 @@
 %%
 
 \begin{abstract}
-  A clear and well-documented \LaTeX\ document is presented as an
-  article formatted for publication by ACM in a conference proceedings
-  or journal publication. Based on the ``acmart'' document class, this
-  article presents and explains many of the common variations, as well
-  as many of the formatting elements an author may use in the
-  preparation of the documentation of their work.
+Im Rahmen dieses hier vorgestellten Projekts galt es ein Trading Bot für Kryptowährungen mit Hilfe des Cluster Computing Frameworks Spark zu entwickeln. Hierfür wurden in einem aufgeteilten Entwicklungsprozess über mehrere Arbeitsschritte hinweg, die einzelnen Komponenten fertiggestellt. Bei Realisierung des Projektziels kamen Konzepte des Data Ware Housings zur Anwendung. Schlussendlich wurde vom Entwickler-Team ein Trading Bot entwickelt und implementiert, der durch die Kombination mehrerer verschiedener Indikatoren und einem damit unmittelbar zusammenhängenden Wahlverfahren entsprechend abgeleitete Handelsentscheidung auf Basis historischer, aufbereiteter Daten trifft. 
 \end{abstract}
 
 
@@ -168,15 +173,19 @@
 %% KEYWORDS TODO
 %%
 
-\keywords{datasets, neural networks, gaze detection, text tagging}
+%%\keywords{datasets, neural networks, gaze detection, text tagging}
+
+
 
 \maketitle
 
+%%\pagestyle{plain}
+\renewcommand{\shortauthors}{}
 
 %%
 %% EINLEITUNG (Hab ich so von https://github.com/sleuoth-hof/trading_2019/blob/master/Abgabe/acmart-master/samples/sample-sigconf.tex hierher kopiert)
 %%
-\subfile{Einleitung/abstract.tex}
+%%\subfile{Einleitung/abstract.tex}
 \subfile{Einleitung/einleitung.tex}
 
 \subfile{Einleitung/relWork.tex}

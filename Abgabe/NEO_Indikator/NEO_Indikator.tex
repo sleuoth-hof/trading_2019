@@ -6,7 +6,7 @@
 \subsection{Hinführung}
 %\label{sec:hinführung}
 
-In diesem Abschnitt soll beschrieben werden, wie Chartverläufe von Kryptowährungen analysiert werden können, um mit Hilfe von bestimmten technischen Indikatoren zur Trading"=Entscheidungsfindung beizutragen. Die Indikatoren werden hierbei nicht selbst implementiert, sondern unter zur Hilfenahme der Open-Source Library TA-Lib, vgl. \cite{taLib} berechnet und anschließend von einer Bewertungsstrategie genauer im Hinblick auf mögliche Trendwechsel betrachtet. Die Bewertungsstrategie, genannt NEO-Strategie, baut bzw. modifiziert hierbei eine bereits vorhandene Strategie. Diese Strategie  wird im GitHub-Repository Gekko-Strategies, vgl. \cite{gekko}, welches eine Vielzahl von Strategien für die Trading-Plattform Gekko bereithält und zudem in einem Projekt der Universität Oldenburg \cite{pro19} verwendet. Zuletzt sollen die Daten in einer standardisierten Form an die nachgelagerte Entscheidungsfindung weitergegeben werden.
+In diesem Abschnitt soll beschrieben werden, wie Chartverläufe von Kryptowährungen analysiert werden können, um mit Hilfe von bestimmten technischen Indikatoren zur Trading"=Entscheidungsfindung beizutragen. Die Indikatoren werden hierbei nicht selbst implementiert, sondern unter zur Hilfenahme der Open-Source Library TA-Lib, vgl. \cite{taLib} berechnet und anschließend von einer Bewertungsstrategie genauer im Hinblick auf mögliche Trendwechsel betrachtet. Die Bewertungsstrategie, genannt NEO-Strategie, baut bzw. modifiziert hierbei eine bereits vorhandene Strategie. Eine Implementierung der Strategie findet sich im GitHub-Repository Gekko-Strategies, vgl. \cite{gekko}, welches eine Vielzahl von Strategien für die Trading-Plattform Gekko bereithält und zudem in einem Projekt der Universität Oldenburg \cite{pro19} verwendet wird. Zuletzt sollen die Daten in einer standardisierten Form an die nachgelagerte Entscheidungsfindung weitergegeben werden.
 
 \subsection{TA-Lib}
 %\label{sec:ta-lib}
@@ -21,27 +21,25 @@ Die TA-Lib ist eine weit verbreitete, in C geschriebene, Open-Source Library fü
 	\item Low, der niedrigste Kurs des jeweiligen Zeitraums
 \end{itemize}
 
-Eine ausführliche Dokumentation der Indikatorenparameter und der Funktionen findet sich auf der Website bzw. dem zugehörigen GitHub-Repository \cite{mrj20} für einen Python-Wrapper, welcher zur Effizienzsteigerung und besserem Benutzerhandling für die Python Version der TaLib entwickelt wurde.
+Eine ausführliche Dokumentation der Indikatorenparameter und der Funktionen findet sich auf der Website bzw. dem zugehörigen GitHub-Repository \cite{mrj20} für einen Python-Wrapper, welcher zur Effizienzsteigerung und einem besseren Benutzerhandling für die Python Version der TaLib entwickelt wurde.
 
 \subsection{NEO-Strategie}
-\label{sec:neo-strategie}
-
-Die eigentliche NEO-Strategie baut auf einer RSI Bull/Bear-Strategie auf, welche Märkte anhand ihrer Trends analysieren soll, vgl. \cite{pro19} . Um Nachzuvollziehen können wie der hier verwendete Relativ Strength Index (RSI) funktioniert, soll kurz auf dessen Berechnung eingegangen werden. Der RSI setzt im Grunde die Stärke von Kursverlusten mit der Stärke von Kursgewinnen in einem gewünschten Zeitraum zueinander ins Verhältnis. Die Formel hierfür lautet: \\ 
-
-
-\begin{figure}
+\label{sec:neo-strategie}Die eigentliche NEO-Strategie baut auf einer RSI Bull/Bear-Strategie auf, welche Märkte anhand ihrer Trends analysieren soll, vgl. \cite{pro19}. Um nachvollziehen zu können, wie der hier verwendete Relativ Strength Index (RSI) funktioniert, soll kurz auf dessen Berechnung eingegangen werden. Der RSI setzt im Grunde die Stärke von Kursverlusten mit der Stärke von Kursgewinnen in einem gewünschten Zeitraum zueinander ins Verhältnis. Die Formel ist in Abbildung ~\ref{Berechnung_RSI} dargestellt.\\ 
+%
+\begin{figure}[!ht]
 \begin{equation*}
 \resizebox{\columnwidth}{!}{
-\text{RSI}=100\cdot\frac{\text{\o\ Summe Gewinn positiver Tage}}{\text{\o\ Summe Gewinn positiver Tage }+\text{ \o\ Summe Verlust negativer Tage}}}
+$\text{RSI}=100\cdot\frac{\text{\o\ Summe Gewinn positiver Tage}}{\text{\o\ Summe Gewinn positiver Tage }+\text{ \o\ Summe Verlust negativer Tage}}$}
+%%\text{RSI}=$100\frac{1}{2}$s}
 \end{equation*}
 \caption{Berechnung RSI}
+\label{Berechnung_RSI}
 \end{figure}
+%
 
+Durch die Multiplikation oszilliert der Indikator zwischen 0 und 100, wodurch er sich sehr gut in Verbindung mit Parametern verwenden lässt. Das Überschreiten eines oberen Grenzwertes bedeutet einen überkauften Markt und ein Unterschreiten des unteren Grenzwertes einen überverkauften Markt. Bei Wiedereintritt in die "`Neutrale-Zone"', also zwischen den Extremwertbereichen, werden so die Kauf- bzw. Verkaufssignale abgegeben, vgl. \cite{ber20}. In der Projektarbeit der Projektgruppe"=DeepCryptoTrading wird bereits eine Analyse der ursprünglichen Gekko-Strategie vorgenommen: "`Zwei unterschiedlich schnelle Moving Averages erkennen, ob es sich um einen Bull oder einen Bear-Market handelt. Anhand dessen wird entweder ein RSI verwendet, der für einen Bull-Market parametrisiert wurde oder einer, der für einen Bear-Market parametrisiert wurde. Dieser RSI wird dann auf zwei Thresholds geprüft, ob Short oder Long als Advice gegeben werden soll. Diese Thresholds sind dabei auch abhängig davon, ob es sich um einen Bull- oder einen Bear-Market handelt."' \cite{pro19}. Die Erweiterung der NEO-Strategie besteht bei der Projektgruppe nun darin, dass der Rate of Change-Indikator (ROC) zur Unterteilung des Bull-Market in einen Idle-Bull-Market und einen Real-Bull-Market hinzugezogen wird. Der ROC berechnet sich wie folgt: \\ 
 
-
-Durch die Multiplikation oszilliert der Indikator zwischen 0 und 100, wodurch er sich sehr gut in Verbindung mit Parametern verwenden lässt. Das Überschreiten eines oberen Grenzwertes bedeutet einen überkauften Markt und ein Unterschreiten des unteren Grenzwertes einen überverkauften Markt. Bei Wiedereintritt in die "'Neutrale-Zone"', also zwischen den Extremwertbereichen, werden so die Kauf- bzw. Verkaufssignale abgegeben, vgl. \cite{ber20}. In der Projektarbeit der Projektgruppe"=DeepCryptoTrading wird bereits eine Analyse der ursprünglichen Gekko-Strategie vorgenommen: "`Zwei unterschiedlich schnelle Moving Averages erkennen, ob es sich um einen Bull oder einen Bear-Market handelt. Anhand dessen wird entweder ein RSI verwendet, der für einen Bull-Market parametrisiert wurde oder einer, der für einen Bear-Market parametrisiert wurde. Dieser RSI wird dann auf zwei Thresholds geprüft, ob Short oder Long als Advice gegeben werden soll. Diese Thresholds sind dabei auch abhängig davon, ob es sich um einen Bull- oder einen Bear-Market handelt."' \cite{pro19}. Die Erweiterung der NEO-Strategie besteht bei der Projektgruppe nun darin, dass der Rate of Change-Indikator (ROC) zur Unterteilung des Bull-Market in einen Idle-Bull-Market und einen Real-Bull-Market hinzugezogen wird. Der ROC berechnet sich wie folgt: \\ 
-
-\begin{figure}
+\begin{figure}[!ht]
 \begin{equation*}
 %\resizebox{\columnwidth}{!}{
 \text{ROC}=100\cdot\frac{\text{Schlusskurs aktuell}- \text{Schlusskurs alt}}{\text{Schlusskurs alt}}
@@ -51,14 +49,15 @@ Durch die Multiplikation oszilliert der Indikator zwischen 0 und 100, wodurch er
 \end{figure}
 
 
-Der ROC fächert den Bull-Market somit nochmals auf, um aufgrund der Veränderungen unterscheiden zu können, ob der Bulll-Market von Dauer ist. Somit kann die Entscheidung des Kaufs oder Verkaufs präziser getroffen werden bzw. die Intaktheit des Marktes bestimmt werden. Der Nachteil des ROC ist, dass er keinerlei Glättungsfaktoren beinhaltet und somit bei unruhigen Kursen eine sehr sprunghafte Änderung erfolgen kann, vgl. \cite{tra20}.\\
+
+Der ROC fächert den Bull-Market somit nochmals auf, um aufgrund der Veränderungen unterscheiden zu können, ob der Bull-Market von Dauer ist. Somit kann die Entscheidung des Kaufs oder Verkaufs präziser getroffen werden bzw. die Intaktheit des Marktes bestimmt werden. Der Nachteil des ROC ist, dass er keinerlei Glättungsfaktoren beinhaltet und somit bei unruhigen Kursen eine sehr sprunghafte Änderung erfolgen kann, vgl. \cite{tra20}.\\
 
 Aufgrund dieses Nachteils setzt die in der Studienarbeit angepasste NEO-Strategie, auf den Aroon-Indikator als Filter, anstatt auf den ROC und den SMA. Der Aroon-Indikator besteht aus den zwei Linien Aroon Up und Aroon Down, welche das Ziel verfolgen die aktuelle Marktphase im Hinblick auf Aufwärtstrend, Abwärtstrend und Seitwärtstrend zu ermitteln, vgl. \cite{ber201}. Die Berechnung der zwei Indikatoren-Linien setzt sich wie folgt zusammen: \\
 
 \begin{figure}
 \begin{equation*}
 \resizebox{\columnwidth}{!}{
-\text{Aroon Up}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodenhoch}}{\text{Periodenlänge}}}
+$\text{Aroon Up}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodenhoch}}{\text{Periodenlänge}}$}
 \end{equation*}
 \caption{Berechnung Aroon Up}
 \end{figure}
@@ -66,7 +65,7 @@ Aufgrund dieses Nachteils setzt die in der Studienarbeit angepasste NEO-Strategi
 \begin{figure}
 \begin{equation*}
 \resizebox{\columnwidth}{!}{
-\text{Aroon Down}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodentief}}{\text{Periodenlänge}}}
+$\text{Aroon Down}=100\cdot\frac{\text{Periodenlänge}- \text{Anzahl Tage seit letztem Periodentief}}{\text{Periodenlänge}}$}
 \end{equation*}
 \caption{Berechnung Aroon Down}
 \end{figure}
